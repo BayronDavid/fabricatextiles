@@ -15,7 +15,13 @@ export const products = [
       "Ajuste ergonómico para uso prolongado"
     ],
     tags: ["UV", "Supervigilancia", "Nuca protectora"],
-    keywords: ["Gorra legionario", "Protección solar vigilancia", "Normativa dotación", "Cachucha nuca"],
+    keywords: [
+      "Gorra legionario",
+      "Protección solar vigilancia",
+      "Normativa dotación",
+      "Cachucha nuca",
+      "Goleanas tipo legionario"
+    ],
     images: [
       "https://placehold.co/600x600/1f2937/ffffff?text=Goleana+Vista+Frontal",
       "https://placehold.co/600x600/374151/ffffff?text=Goleana+Vista+Lateral",
@@ -108,7 +114,13 @@ export const products = [
       "Cintas reflectivas grado ingeniería"
     ],
     tags: ["Reflectivo", "Impermeable", "Porta radio"],
-    keywords: ["Chaleco táctico", "Seguridad privada", "Reata porta radio", "Chaleco escolta"],
+    keywords: [
+      "Chaleco táctico",
+      "Seguridad privada",
+      "Reata porta radio",
+      "Chaleco escolta",
+      "Fábrica dotaciones seguridad privada"
+    ],
     images: [
       "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Frontal",
       "https://placehold.co/600x600/374151/ffffff?text=Chaleco+Espalda",
@@ -155,7 +167,12 @@ export const products = [
       "Tejido anti desgarre con refuerzos"
     ],
     tags: ["Brigada", "EHS", "Reflectivo"],
-    keywords: ["Chaleco brigadista", "Chaleco evacuación", "Chaleco EHS"],
+    keywords: [
+      "Chaleco brigadista",
+      "Chaleco evacuación",
+      "Chaleco EHS",
+      "Chalecos reflectivos brigadista"
+    ],
     images: [
       "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Brigadista",
       "https://placehold.co/600x600/4b5563/ffffff?text=Bordado+Rol"
@@ -293,7 +310,12 @@ export const products = [
       "Versión con y sin capucha removible"
     ],
     tags: ["Acolchado", "Logística", "Picking"],
-    keywords: ["Chaleco acolchado", "Chaleco picking", "Chaleco logística"],
+    keywords: [
+      "Chaleco acolchado",
+      "Chaleco picking",
+      "Chaleco logística",
+      "Chalecos acolchados empresas"
+    ],
     images: [
       "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Acolchado",
       "https://placehold.co/600x600/4b5563/ffffff?text=Detalle+Bolsillos"
@@ -316,7 +338,13 @@ export const products = [
       "Colores corporativos y combinaciones bicolor"
     ],
     tags: ["Eventos", "Campaña política", "Bordado"],
-    keywords: ["Gorras publicitarias", "Gorras campaña política", "Gorras bordadas por mayor"],
+    keywords: [
+      "Gorras publicitarias",
+      "Gorras campaña política",
+      "Gorras bordadas por mayor",
+      "Fábrica gorras publicitarias",
+      "Gorras campaña política por mayor"
+    ],
     images: [
       "https://placehold.co/600x600/1f2937/ffffff?text=Gorras+Publicitarias",
       "https://placehold.co/600x600/4b5563/ffffff?text=Variantes+Trucker"
@@ -339,7 +367,12 @@ export const products = [
       "Plazos rápidos para eventos"
     ],
     tags: ["Eventos", "Impresión", "Ecológica"],
-    keywords: ["Bolsas cambre", "Bolsas tela no tejida", "Bolsas publicitarias"],
+    keywords: [
+      "Bolsas cambre",
+      "Bolsas tela no tejida",
+      "Bolsas publicitarias",
+      "Bolsas ecológicas cambre fábrica"
+    ],
     images: [
       "https://placehold.co/600x600/1f2937/ffffff?text=Bolsas+Cambre",
       "https://placehold.co/600x600/4b5563/ffffff?text=Impresion+Full+Color"
