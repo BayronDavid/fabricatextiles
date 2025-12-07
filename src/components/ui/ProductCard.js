@@ -1,8 +1,62 @@
+"use client";
+import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductCard({ product }) {
+  const images = product.images || [];
+  const [current, setCurrent] = useState(0);
+
+  const hasSlides = images.length > 1;
+  const next = () => setCurrent((idx) => (idx + 1) % images.length);
+  const prev = () => setCurrent((idx) => (idx - 1 + images.length) % images.length);
+
   return (
     <div className="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition">
+      {images.length > 0 && (
+        <div className="relative group mb-4 aspect-square rounded-lg overflow-hidden bg-gray-50 border border-gray-100">
+          <Image
+            src={images[current]}
+            alt={`${product.title} - vista ${current + 1}`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={current === 0}
+            unoptimized
+          />
+
+          {hasSlides && (
+            <>
+              <button
+                onClick={(e) => { e.preventDefault(); prev(); }}
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/85 hover:bg-white text-gray-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition"
+                aria-label="Imagen anterior"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+              <button
+                onClick={(e) => { e.preventDefault(); next(); }}
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/85 hover:bg-white text-gray-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition"
+                aria-label="Imagen siguiente"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+
+              <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={(e) => { e.preventDefault(); setCurrent(idx); }}
+                    className={`w-2 h-2 rounded-full transition-colors ${idx === current ? 'bg-gray-900' : 'bg-gray-300/80 hover:bg-gray-400'}`}
+                    aria-label={`Ir a imagen ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      )}
+
       <div className="flex items-start justify-between gap-4 mb-3">
         <div>
           <p className="text-xs uppercase tracking-[0.08em] text-gray-500 font-bold">{product.category}</p>
