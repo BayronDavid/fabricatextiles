@@ -1,4 +1,4 @@
-import { planSEO } from '@/data/plan';
+import { planData } from '@/data/plan';
 import Link from 'next/link';
 
 export const metadata = {
@@ -18,22 +18,22 @@ export default function PlanPage() {
         <div className="p-8">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
-              <div className="text-4xl font-black text-blue-600 mb-2">{planSEO.ciudades.length}</div>
+              <div className="text-4xl font-black text-blue-600 mb-2">{planData.structure[0].children.filter(c=>c.name && c.name.includes('envios')|| c.name==='envios/').length ? planData.structure[0].children.length : planData.structure[0].children.length}</div>
               <div className="text-sm font-bold text-blue-800 uppercase">Ciudades Objetivo</div>
             </div>
             <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-              <div className="text-4xl font-black text-green-600 mb-2">{planSEO.productos.length}</div>
+              <div className="text-4xl font-black text-green-600 mb-2">{planData.structure[0].children.filter(c=>c.name && c.name.includes('productos')|| c.name==='productos/').length ? planData.structure[0].children.length : planData.structure[0].children.length}</div>
               <div className="text-sm font-bold text-green-800 uppercase">Productos Core</div>
             </div>
             <div className="bg-purple-50 p-6 rounded-xl border border-purple-100">
-              <div className="text-4xl font-black text-purple-600 mb-2">{planSEO.ciudades.length * planSEO.productos.length}</div>
+              <div className="text-4xl font-black text-purple-600 mb-2">—</div>
               <div className="text-sm font-bold text-purple-800 uppercase">Combinaciones Posibles</div>
             </div>
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b pb-2">1. Landing Pages por Ciudad (SEO Local)</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            {planSEO.ciudades.map((ciudad) => (
+            {(planData.structure && planData.structure[0] && planData.structure[0].children ? planData.structure[0].children.filter(ch=>ch.name && ch.name.includes('envios')).map((ciudad) => ({ slug: ciudad.name.replace('/','').toLowerCase(), nombre: ciudad.name.replace('/','') })) : []).map((ciudad) => (
               <Link 
                 key={ciudad.slug} 
                 href={`/envios/${ciudad.slug}`}
@@ -46,7 +46,7 @@ export default function PlanPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b pb-2">2. Páginas de Producto (Long Tail)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-            {planSEO.productos.map((prod) => (
+            {(planData.structure && planData.structure[0] && planData.structure[0].children ? planData.structure[0].children.filter(ch=>ch.name && ch.name.includes('productos')).flatMap(p=>p.children || []).filter(Boolean).map((prod)=>({ slug: prod.name.replace('/','').toLowerCase(), nombre: prod.name.replace('/','') })) : []).map((prod) => (
               <Link 
                 key={prod.slug} 
                 href={`/productos/${prod.slug}`}
