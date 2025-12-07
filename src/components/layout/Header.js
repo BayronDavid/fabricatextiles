@@ -14,12 +14,11 @@ export default function Header() {
           <p className="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium mt-1">Manufactura Textil</p>
         </Link>
         
-        {/* Desktop Menu */}
+        {/* Desktop Menu (minimal) */}
         <nav className="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
           <Link href="/#soluciones" className="hover:text-black transition">Nuestros Productos</Link>
           <Link href="/#capacidad" className="hover:text-black transition">Capacidad Instalada</Link>
           <Link href="/#contacto" className="hover:text-black transition">Contacto Empresas</Link>
-          <Link href="/plan" className="hover:text-black transition text-gray-400">Plan SEO</Link>
         </nav>
 
         {/* CTA Button */}

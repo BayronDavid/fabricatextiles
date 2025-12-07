@@ -15,6 +15,7 @@ export default function Footer() {
             <Link href="/productos/goleanas-legionario" className="hover:text-black">Goleanas</Link>
             <Link href="/productos/chalecos-vigilancia" className="hover:text-black">Chalecos</Link>
             <Link href="/servicios/maquila-textil" className="hover:text-black">Maquila</Link>
+            <Link href="/sitemap.xml" className="hover:text-black">Sitemap</Link>
           </div>
         </div>
       </div>
