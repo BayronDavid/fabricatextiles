@@ -5,6 +5,8 @@ import Hero from '@/components/ui/Hero';
 import ContactForm from '@/components/ui/ContactForm';
 import Link from 'next/link';
 import Image from 'next/image';
+import ProductCard from '@/components/ui/ProductCard';
+import { products } from '@/data/products';
 
 export const metadata = {
   title: 'Fábrica de Dotaciones y Confección Industrial | El Arte',
@@ -15,6 +17,20 @@ export const metadata = {
 };
 
 export default function Home() {
+  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://confeccioneselarte.com';
+  const featured = products.filter((p) => p.featured).slice(0, 6);
+  const itemListJson = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: featured.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${base}/productos/${encodeURIComponent(p.slug)}`,
+      name: p.title,
+      image: p.images && p.images.length ? p.images[0] : undefined
+    }))
+  };
+
   return (
     <>
       <TopBar />
@@ -38,6 +54,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* PRODUCTOS DESTACADOS (PREVIEW) */}
+        {featured.length > 0 && (
+          <section id="productos-destacados" className="py-20 bg-white">
+            <div className="container mx-auto px-4">
+              <div className="mb-8 flex items-center justify-between">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-1">Productos Destacados</h2>
+                  <p className="text-sm text-gray-600">Selección de referencias para cotización inmediata y consulta técnica.</p>
+                </div>
+                <Link href="/productos" className="text-sm font-semibold text-gray-700 hover:text-black">Ver catálogo completo →</Link>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {featured.map((p) => (
+                  <ProductCard key={p.slug} product={p} showCategoryLink={false} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CATEGORÍAS */}
         <section id="soluciones" className="py-24 bg-white">
@@ -71,7 +108,7 @@ export default function Home() {
                     <li>• Cumplimiento de normativa</li>
                     <li>• Telas de alta resistencia</li>
                   </ul>
-                  <Link href="/productos/goleanas-legionario" className="block w-full py-3 bg-white border border-gray-300 rounded-lg text-sm font-bold text-gray-900 hover:bg-gray-900 hover:text-white transition text-center">
+                  <Link href="/productos#seguridad" className="block w-full py-3 bg-white border border-gray-300 rounded-lg text-sm font-bold text-gray-900 hover:bg-gray-900 hover:text-white transition text-center">
                     Ver Dotación Vigilancia
                   </Link>
                 </div>
@@ -96,7 +133,7 @@ export default function Home() {
                     <li>• Personalización con bordados</li>
                     <li>• Protección térmica y reflectiva</li>
                   </ul>
-                  <Link href="/productos/chalecos-vigilancia" className="block w-full py-3 bg-white border border-gray-300 rounded-lg text-sm font-bold text-gray-900 hover:bg-gray-900 hover:text-white transition text-center">
+                  <Link href="/productos#industrial" className="block w-full py-3 bg-white border border-gray-300 rounded-lg text-sm font-bold text-gray-900 hover:bg-gray-900 hover:text-white transition text-center">
                     Ver Línea Industrial
                   </Link>
                 </div>
@@ -178,6 +215,12 @@ export default function Home() {
         </section>
 
         <ContactForm />
+
+        {/* JSON-LD ItemList para SEO de productos destacados */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJson) }}
+        />
       </main>
       <Footer />
     </>

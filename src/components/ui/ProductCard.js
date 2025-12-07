@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, showCategoryLink = true }) {
   const images = product.images || [];
   const [current, setCurrent] = useState(0);
 
@@ -74,6 +74,18 @@ export default function ProductCard({ product }) {
           </span>
         ))}
       </div>
+
+      {/* Enlace a la página de productos filtrada por categoría (ancla) */}
+      {showCategoryLink && product.category && (
+        <div className="mb-3">
+          <Link
+            href={`/productos#${product.category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')}`}
+            className="text-xs text-gray-600 hover:text-gray-800"
+          >
+            Ver más en {product.category}
+          </Link>
+        </div>
+      )}
 
       <div className="flex items-center justify-between">
         <Link
