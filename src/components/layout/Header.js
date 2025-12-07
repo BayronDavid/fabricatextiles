@@ -1,9 +1,18 @@
 "use client";
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { products } from '@/data/products';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const closeTimerRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
@@ -15,8 +24,62 @@ export default function Header() {
         </Link>
         
         {/* Desktop Menu (minimal) */}
-        <nav className="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
-          <Link href="/#soluciones" className="hover:text-black transition">Nuestros Productos</Link>
+        <nav className="hidden md:flex gap-8 text-sm font-semibold text-gray-600 items-center">
+          {/* Products dropdown - visible and quick to access (controlled state to avoid flicker) */}
+          <div
+            className="relative"
+            onMouseEnter={() => {
+              if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+              setIsProductsOpen(true);
+            }}
+            onMouseLeave={() => {
+              if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+              closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
+            }}
+          >
+            <button
+              onClick={() => setIsProductsOpen((s) => !s)}
+              onFocus={() => {
+                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+                setIsProductsOpen(true);
+              }}
+              onBlur={() => {
+                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+                closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
+              }}
+              className="flex items-center gap-2 hover:text-black transition font-semibold"
+              aria-expanded={isProductsOpen}
+            >
+              Nuestros Productos
+              <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <div
+              role="menu"
+              aria-hidden={!isProductsOpen}
+              className={`absolute left-0 mt-3 w-64 bg-white border border-gray-200 rounded-lg shadow-lg transform transition-all duration-150 ${isProductsOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}
+              onFocus={() => {
+                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+                setIsProductsOpen(true);
+              }}
+              onBlur={() => {
+                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+                closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
+              }}
+            >
+              <ul className="p-4 space-y-2">
+                {products.slice(0,4).map((p) => (
+                  <li key={p.slug}>
+                    <Link href={`/productos/${p.slug}`} className="block text-sm text-gray-700 hover:text-gray-900">{p.shortTitle}</Link>
+                  </li>
+                ))}
+                <li className="pt-2 border-t border-gray-100">
+                  <Link href="/productos" className="block text-sm font-medium text-gray-600 hover:text-gray-900">Ver catálogo completo</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <Link href="/#capacidad" className="hover:text-black transition">Capacidad Instalada</Link>
           <Link href="/#contacto" className="hover:text-black transition">Contacto Empresas</Link>
         </nav>
@@ -41,7 +104,11 @@ export default function Header() {
         <div className="md:hidden bg-white border-b border-gray-200 absolute w-full left-0 top-20 shadow-xl">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             <nav className="flex flex-col gap-2 text-gray-700 font-semibold">
-              <Link href="/#soluciones" className="block py-2" onClick={() => setIsMenuOpen(false)}>Nuestros Productos</Link>
+              <Link href="/productos" className="block py-2" onClick={() => setIsMenuOpen(false)}>Todos los Productos</Link>
+              {/* List a few featured products directly in mobile menu for quick access */}
+              {products.slice(0,6).map((p) => (
+                <Link key={p.slug} href={`/productos/${p.slug}`} className="block py-2 pl-4 text-sm text-gray-700" onClick={() => setIsMenuOpen(false)}>{p.shortTitle}</Link>
+              ))}
               <Link href="/#capacidad" className="block py-2" onClick={() => setIsMenuOpen(false)}>Capacidad Instalada</Link>
               <Link href="/#contacto" className="block py-2" onClick={() => setIsMenuOpen(false)}>Contacto Empresas</Link>
             </nav>
