@@ -39,6 +39,7 @@ export default function Hero() {
               fill
               className="object-cover opacity-90"
               priority
+              unoptimized
             />
             
             {/* Etiqueta Flotante */}

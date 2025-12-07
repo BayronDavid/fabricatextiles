@@ -25,6 +25,7 @@ export default function ProductSlider({ images, title }) {
           className="object-cover transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority={currentIndex === 0}
+          unoptimized
         />
       </div>
       

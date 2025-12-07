@@ -30,11 +30,11 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all">
               {/* Logos Placeholders */}
-              <Image src="https://placehold.co/120x40/transparent/333333?text=FUERZA+AEREA" width={120} height={40} alt="Cliente Fuerza Aerea" className="h-8 md:h-10 object-contain w-auto" />
-              <Image src="https://placehold.co/120x40/transparent/333333?text=ANI" width={120} height={40} alt="Cliente ANI" className="h-8 md:h-10 object-contain w-auto" />
-              <Image src="https://placehold.co/120x40/transparent/333333?text=ALCALDIA" width={120} height={40} alt="Cliente Alcaldia" className="h-8 md:h-10 object-contain w-auto" />
-              <Image src="https://placehold.co/120x40/transparent/333333?text=ACON+SECURITY" width={120} height={40} alt="Cliente Acon" className="h-8 md:h-10 object-contain w-auto" />
-              <Image src="https://placehold.co/120x40/transparent/333333?text=HORZON" width={120} height={40} alt="Cliente Horzon" className="h-8 md:h-10 object-contain w-auto" />
+              <Image src="https://placehold.co/120x40/transparent/333333?text=FUERZA+AEREA" width={120} height={40} alt="Cliente Fuerza Aerea" className="h-8 md:h-10 object-contain w-auto" unoptimized />
+              <Image src="https://placehold.co/120x40/transparent/333333?text=ANI" width={120} height={40} alt="Cliente ANI" className="h-8 md:h-10 object-contain w-auto" unoptimized />
+              <Image src="https://placehold.co/120x40/transparent/333333?text=ALCALDIA" width={120} height={40} alt="Cliente Alcaldia" className="h-8 md:h-10 object-contain w-auto" unoptimized />
+              <Image src="https://placehold.co/120x40/transparent/333333?text=ACON+SECURITY" width={120} height={40} alt="Cliente Acon" className="h-8 md:h-10 object-contain w-auto" unoptimized />
+              <Image src="https://placehold.co/120x40/transparent/333333?text=HORZON" width={120} height={40} alt="Cliente Horzon" className="h-8 md:h-10 object-contain w-auto" unoptimized />
             </div>
           </div>
         </section>
@@ -60,6 +60,7 @@ export default function Home() {
                     width={600} 
                     height={800}
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    unoptimized
                   />
                   <div className="absolute bottom-4 left-4 bg-white px-3 py-1 text-xs font-bold rounded shadow">ESPECIALIDAD</div>
                 </div>
@@ -85,6 +86,7 @@ export default function Home() {
                     width={600} 
                     height={800}
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    unoptimized
                   />
                 </div>
                 <div className="px-4 pb-4">
@@ -109,6 +111,7 @@ export default function Home() {
                     width={600} 
                     height={800}
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    unoptimized
                   />
                 </div>
                 <div className="px-4 pb-4">
@@ -167,6 +170,7 @@ export default function Home() {
                   width={600} 
                   height={600}
                   className="relative rounded-xl shadow-2xl w-full"
+                  unoptimized
                 />
               </div>
             </div>
