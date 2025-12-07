@@ -6,6 +6,7 @@ import ProductSlider from '@/components/ui/ProductSlider';
 import ContactForm from '@/components/ui/ContactForm';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { cities } from '@/data/cities';
 
 export async function generateStaticParams() {
   return products.map((product) => ({
@@ -42,6 +43,8 @@ export default async function ProductPage({ params }) {
   if (!product) {
     notFound();
   }
+
+  const availabilityCities = cities.slice(0, 9);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -126,6 +129,27 @@ export default async function ProductPage({ params }) {
             </div>
           </div>
         </div>
+
+        <section className="container mx-auto px-4 pb-12">
+          <div className="border border-gray-200 rounded-2xl p-6 bg-gray-50">
+            <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+              <h2 className="text-xl font-black text-gray-900">Disponibilidad Regional</h2>
+              <p className="text-sm text-gray-600">Enviamos este producto desde Bogotá a las principales ciudades.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-3">
+              {availabilityCities.map((city) => (
+                <Link
+                  key={city.slug}
+                  href={`/venta/${city.slug}/${product.slug}`}
+                  className="flex items-center justify-between gap-2 border border-gray-200 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-gray-800 hover:border-gray-400 hover:-translate-y-[1px] transition"
+                >
+                  <span>Ver en {city.name}</span>
+                  <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* JSON-LD */}
         <script
