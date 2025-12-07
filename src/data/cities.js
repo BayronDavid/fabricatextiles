@@ -1,7 +1,17 @@
 export const cities = [
+  // --- SEDE PRINCIPAL (Hiper-Local) ---
+  {
+    slug: "dotaciones-bonanza-bogota",
+    name: "Bogotá - Barrio Bonanza",
+    title: "Fábrica de Dotaciones en Bonanza - Punto de Fábrica",
+    description: "Visite nuestra planta de producción en el Barrio Bonanza (Engativá). Venta directa sin intermediarios, showroom de muestras y atención personalizada.",
+    keywords: ["Fábrica dotaciones Bonanza", "Uniformes Barrio Bonanza", "Punto de fábrica dotaciones", "Dotaciones Engativá"]
+  },
+
+  // --- CAPITALES PRINCIPALES ---
   {
     slug: "dotaciones-bogota",
-    name: "Bogotá",
+    name: "Bogotá DC",
     title: "Fábrica de Dotaciones en Bogotá - Planta Principal",
     description: "Visite nuestra fábrica en Bogotá o solicite visita comercial. Atención inmediata para licitaciones y grandes volúmenes.",
     keywords: ["Dotación industrial Bogotá", "Uniformes vigilantes Bogotá", "Confección urgente Bogotá"]
@@ -27,6 +37,66 @@ export const cities = [
     description: "Uniformes frescos y resistentes para el clima de la costa. Envíos rápidos a Barranquilla y Atlántico.",
     keywords: ["Uniformes Barranquilla", "Dotación Costa", "Ropa trabajo Barranquilla"]
   },
+
+  // --- SABANA DE BOGOTÁ (Cinturón Industrial) ---
+  {
+    slug: "dotaciones-mosquera",
+    name: "Mosquera",
+    title: "Dotaciones Industriales en Mosquera",
+    description: "Abastecimiento directo a parques industriales de Mosquera. Respuesta ágil y personalización.",
+    keywords: ["Dotaciones Mosquera", "Uniformes Cundinamarca", "Ropa industrial Mosquera"]
+  },
+  {
+    slug: "dotaciones-funza",
+    name: "Funza",
+    title: "Dotaciones para Logística en Funza",
+    description: "Chalecos reflectivos, gorras y overoles para operaciones logísticas en Funza y Siberia.",
+    keywords: ["Dotaciones Funza", "Uniformes Funza", "Chalecos reflectivos Funza"]
+  },
+  {
+    slug: "dotaciones-madrid",
+    name: "Madrid (Cundinamarca)",
+    title: "Dotaciones Industriales en Madrid - Sabana Occidente",
+    description: "Uniformes para floricultura y manufactura en Madrid. Entrega inmediata por cercanía a planta.",
+    keywords: ["Dotaciones Madrid Cundinamarca", "Uniformes floricultores", "Ropa trabajo Madrid"]
+  },
+  {
+    slug: "dotaciones-cota",
+    name: "Cota",
+    title: "Dotaciones Logísticas en Cota y Siberia",
+    description: "Uniformes para el corredor logístico de la Calle 80 y Cota. Chalecos y botas de seguridad con despacho express.",
+    keywords: ["Dotaciones Cota", "Uniformes Siberia", "Chalecos logísticos Cota"]
+  },
+  {
+    slug: "dotaciones-soacha",
+    name: "Soacha",
+    title: "Dotaciones Express en Soacha",
+    description: "Envíos de proximidad desde Bogotá para Soacha y Sabana Sur. Chalecos, overoles y gorras en producción continua.",
+    keywords: ["Dotaciones Soacha", "Uniformes Sabana", "Chalecos Soacha"]
+  },
+  {
+    slug: "dotaciones-tocancipa",
+    name: "Tocancipá",
+    title: "Dotaciones para Zona Franca Tocancipá",
+    description: "Suministro industrial para empresas en Tocancipá y Gachancipá. Overoles y equipos de altura.",
+    keywords: ["Dotaciones Tocancipá", "Uniformes Zona Franca", "Ropa industrial Tocancipá"]
+  },
+  {
+    slug: "dotaciones-zipaquira",
+    name: "Zipaquirá",
+    title: "Dotaciones en Zipaquirá - Sabana Centro",
+    description: "Ropa de trabajo y seguridad industrial para minería y comercio en Zipaquirá. Envíos diarios.",
+    keywords: ["Dotaciones Zipaquirá", "Uniformes Zipaquirá", "Chalecos Zipaquirá"]
+  },
+  {
+    slug: "dotaciones-cajica",
+    name: "Cajicá",
+    title: "Uniformes y Dotaciones en Cajicá",
+    description: "Atención a colegios, universidades y empresas en Cajicá. Bordados y confección de alta calidad.",
+    keywords: ["Dotaciones Cajicá", "Uniformes escolares Cajicá", "Ropa trabajo Cajicá"]
+  },
+
+  // --- CIUDADES INDUSTRIALES Y REGIONALES ---
   {
     slug: "dotaciones-cartagena",
     name: "Cartagena",
@@ -187,26 +257,5 @@ export const cities = [
     title: "Dotaciones Agroindustriales en Palmira",
     description: "Uniformes livianos y frescos para ingenios y agroindustria en Palmira y el Valle.",
     keywords: ["Dotaciones Palmira", "Uniformes ingenios", "Ropa trabajo Valle"]
-  },
-  {
-    slug: "dotaciones-soacha",
-    name: "Soacha",
-    title: "Dotaciones Express en Soacha",
-    description: "Envíos de proximidad desde Bogotá para Soacha y Sabana. Chalecos, overoles y gorras en producción continua.",
-    keywords: ["Dotaciones Soacha", "Uniformes Sabana", "Chalecos Soacha"]
-  },
-  {
-    slug: "dotaciones-mosquera",
-    name: "Mosquera",
-    title: "Dotaciones Industriales en Mosquera",
-    description: "Abastecimiento directo a parques industriales de Mosquera. Respuesta ágil y personalización.",
-    keywords: ["Dotaciones Mosquera", "Uniformes Cundinamarca", "Ropa industrial Mosquera"]
-  },
-  {
-    slug: "dotaciones-funza",
-    name: "Funza",
-    title: "Dotaciones para Logística en Funza",
-    description: "Chalecos reflectivos, gorras y overoles para operaciones logísticas en Funza y Siberia.",
-    keywords: ["Dotaciones Funza", "Uniformes Funza", "Chalecos reflectivos Funza"]
   }
 ];
