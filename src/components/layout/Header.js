@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { products } from '@/data/products';
 
@@ -14,6 +14,25 @@ export default function Header() {
     };
   }, []);
 
+  const groupedProducts = useMemo(() => {
+    const map = new Map();
+    products.forEach((p) => {
+      if (!map.has(p.category)) map.set(p.category, []);
+      map.get(p.category).push(p);
+    });
+    return Array.from(map.entries());
+  }, []);
+
+  const openProducts = () => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    setIsProductsOpen(true);
+  };
+
+  const closeProductsDelayed = () => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
       <div className="container mx-auto px-4 h-20 flex justify-between items-center">
@@ -22,31 +41,18 @@ export default function Header() {
           <h1 className="font-black text-gray-900 text-xl tracking-tight leading-none group-hover:text-gray-700 transition">CONFECCIONES<br/>EL ARTE</h1>
           <p className="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium mt-1">Manufactura Textil</p>
         </Link>
-        
+
         {/* Desktop Menu (minimal) */}
         <nav className="hidden md:flex gap-8 text-sm font-semibold text-gray-600 items-center">
-          {/* Products dropdown - visible and quick to access (controlled state to avoid flicker) */}
           <div
             className="relative"
-            onMouseEnter={() => {
-              if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-              setIsProductsOpen(true);
-            }}
-            onMouseLeave={() => {
-              if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-              closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
-            }}
+            onMouseEnter={openProducts}
+            onMouseLeave={closeProductsDelayed}
           >
             <button
-              onClick={() => setIsProductsOpen((s) => !s)}
-              onFocus={() => {
-                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-                setIsProductsOpen(true);
-              }}
-              onBlur={() => {
-                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-                closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
-              }}
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
+              onFocus={openProducts}
+              onBlur={closeProductsDelayed}
               className="flex items-center gap-2 hover:text-black transition font-semibold"
               aria-expanded={isProductsOpen}
             >
@@ -57,26 +63,27 @@ export default function Header() {
             <div
               role="menu"
               aria-hidden={!isProductsOpen}
-              className={`absolute left-0 mt-3 w-64 bg-white border border-gray-200 rounded-lg shadow-lg transform transition-all duration-150 ${isProductsOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}
-              onFocus={() => {
-                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-                setIsProductsOpen(true);
-              }}
-              onBlur={() => {
-                if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-                closeTimerRef.current = setTimeout(() => setIsProductsOpen(false), 150);
-              }}
+              className={`absolute left-0 mt-3 w-[420px] bg-white border border-gray-200 rounded-lg shadow-lg transform transition-all duration-150 ${isProductsOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}
+              onFocus={openProducts}
+              onBlur={closeProductsDelayed}
             >
-              <ul className="p-4 space-y-2">
-                {products.slice(0,4).map((p) => (
-                  <li key={p.slug}>
-                    <Link href={`/productos/${p.slug}`} className="block text-sm text-gray-700 hover:text-gray-900">{p.shortTitle}</Link>
-                  </li>
+              <div className="grid grid-cols-2 gap-4 p-4">
+                {groupedProducts.map(([cat, items]) => (
+                  <div key={cat} className="space-y-2">
+                    <p className="text-[11px] uppercase tracking-[0.12em] text-gray-500 font-bold">{cat}</p>
+                    <ul className="space-y-1">
+                      {items.slice(0,3).map((p) => (
+                        <li key={p.slug}>
+                          <Link href={`/productos/${p.slug}`} className="block text-sm text-gray-700 hover:text-gray-900">{p.shortTitle}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-                <li className="pt-2 border-t border-gray-100">
-                  <Link href="/productos" className="block text-sm font-medium text-gray-600 hover:text-gray-900">Ver catálogo completo</Link>
-                </li>
-              </ul>
+              </div>
+              <div className="border-t border-gray-100 px-4 py-3 text-sm font-semibold">
+                <Link href="/productos" className="text-gray-700 hover:text-gray-900">Ver catálogo completo</Link>
+              </div>
             </div>
           </div>
 
@@ -105,9 +112,14 @@ export default function Header() {
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             <nav className="flex flex-col gap-2 text-gray-700 font-semibold">
               <Link href="/productos" className="block py-2" onClick={() => setIsMenuOpen(false)}>Todos los Productos</Link>
-              {/* List a few featured products directly in mobile menu for quick access */}
-              {products.slice(0,6).map((p) => (
-                <Link key={p.slug} href={`/productos/${p.slug}`} className="block py-2 pl-4 text-sm text-gray-700" onClick={() => setIsMenuOpen(false)}>{p.shortTitle}</Link>
+              {/* List products grouped by categoría for quick access */}
+              {groupedProducts.map(([cat, items]) => (
+                <div key={cat} className="pt-1">
+                  <p className="text-[11px] uppercase tracking-[0.12em] text-gray-500 font-bold pl-2">{cat}</p>
+                  {items.slice(0,3).map((p) => (
+                    <Link key={p.slug} href={`/productos/${p.slug}`} className="block py-2 pl-4 text-sm text-gray-700" onClick={() => setIsMenuOpen(false)}>{p.shortTitle}</Link>
+                  ))}
+                </div>
               ))}
               <Link href="/#capacidad" className="block py-2" onClick={() => setIsMenuOpen(false)}>Capacidad Instalada</Link>
               <Link href="/#contacto" className="block py-2" onClick={() => setIsMenuOpen(false)}>Contacto Empresas</Link>
