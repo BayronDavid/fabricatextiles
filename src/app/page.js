@@ -42,7 +42,7 @@ export default function Home() {
         <section className="relative bg-white overflow-hidden pattern-grid">
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 to-white"></div>
 
-          <div className="container mx-auto px-4 py-20 relative z-10">
+          <div className="container mx-auto px-4 py-10 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
 
               <span className="inline-block bg-blue-50 border border-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-xs font-bold mb-8 uppercase tracking-wider">
