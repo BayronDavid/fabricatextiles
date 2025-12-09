@@ -47,8 +47,8 @@ export const products = [
     tags: ["Trucker", "Malla", "Promocional"],
     keywords: ["Gorras camioneras", "Gorras trucker por mayor", "Gorras malla publicidad"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Gorra+Trucker",
-      "https://placehold.co/600x600/374151/ffffff?text=Malla+Trasera"
+      "/productos/gorras/malla/blanca-negra.jpg",
+      "/productos/gorras/malla/politica-roja.jpg"
     ],
     featured: false
   },
@@ -70,8 +70,9 @@ export const products = [
     tags: ["Drill", "Bordado 3D", "Corporativo"],
     keywords: ["Gorras drill bordadas", "Gorras corporativas", "Gorras alto relieve"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Gorra+Drill",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Bordado+Alto+Relieve"
+      "/productos/gorras/acrilico/blanca nuca - lado.jpg",
+      "/productos/gorras/acrilico/blanca nuca . back.jpg",
+      "/productos/gorras/acrilico/blanca, nuca.jpg"
     ],
     featured: true
   },
@@ -93,8 +94,8 @@ export const products = [
     tags: ["Protección solar", "Ala amplia", "UV"],
     keywords: ["Pavas para sol", "Sombreros industriales", "Protección UV obras"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Pava+UV",
-      "https://placehold.co/600x600/374151/ffffff?text=Ala+Amplia"
+      "/productos/uniforme/estilista-rosa-atras.jpg",
+      "/productos/uniforme/estilista-rosa-frente.jpg"
     ],
     featured: false
   },
@@ -122,9 +123,8 @@ export const products = [
       "Fábrica dotaciones seguridad privada"
     ],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Frontal",
-      "https://placehold.co/600x600/374151/ffffff?text=Chaleco+Espalda",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Detalle+Bolsillos"
+      "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
+      "/productos/chalecos/chelco-naranja-reflectivo.jpg"
     ],
     featured: true
   },
@@ -146,8 +146,8 @@ export const products = [
     tags: ["Reflectivo", "Obra", "Alta visibilidad"],
     keywords: ["Chaleco alta visibilidad", "Chaleco reflectivo obra", "Chaleco seguridad vial"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Reflectivo",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Detalle+Cintas"
+      "/productos/chalecos/chelco-naranja-reflectivo.jpg",
+      "/productos/chalecos/Chaleco-azul-bolsillos.jpg"
     ],
     featured: false
   },
@@ -174,8 +174,8 @@ export const products = [
       "Chalecos reflectivos brigadista"
     ],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Brigadista",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Bordado+Rol"
+      "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
+      "/productos/chalecos/chelco-naranja-reflectivo.jpg"
     ],
     featured: false
   },
@@ -197,8 +197,8 @@ export const products = [
     tags: ["Vulcanizado", "Reflectivo", "Calibre 18"],
     keywords: ["Dotación mensajería", "Impermeable vulcanizado", "Rompevientos reflectivo"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Impermeable+Completo",
-      "https://placehold.co/600x600/374151/ffffff?text=Detalle+Vulcanizado"
+      "/productos/uniforme/estilista-rosa-atras.jpg",
+      "/productos/uniforme/estilista-rosa-frente.jpg"
     ],
     featured: true
   },
@@ -220,8 +220,8 @@ export const products = [
     tags: ["Impermeable", "Reflectivo", "Calibre 20"],
     keywords: ["Impermeable reflectivo", "Traje lluvia vigilantes", "Impermeable motorizados"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Impermeable+Reflectivo",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Cintas+3M"
+      "/productos/uniforme/estilista-rosa-atras.jpg",
+      "/productos/uniforme/estilista-rosa-frente.jpg"
     ],
     featured: false
   },
@@ -243,8 +243,8 @@ export const products = [
     tags: ["Ignífugo", "Triple aguja", "Trabajo pesado"],
     keywords: ["Overoles industriales", "Ropa trabajo resistente", "Dotación industrial"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Overol+Industrial",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Refuerzos"
+      "/productos/uniforme/estilista-rosa-atras.jpg",
+      "/productos/uniforme/estilista-rosa-frente.jpg"
     ],
     featured: false
   },
@@ -266,8 +266,8 @@ export const products = [
     tags: ["Ignífugo", "Clase II", "Oil & Gas"],
     keywords: ["Overol ignífugo", "Overol retardante de llama", "Overol refinería"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Overol+Ignifugo",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Reflectivos+Clase+II"
+      "/productos/uniforme/estilista-rosa-atras.jpg",
+      "/productos/uniforme/estilista-rosa-frente.jpg"
     ],
     featured: true
   },
@@ -289,8 +289,8 @@ export const products = [
     tags: ["Bicolor", "Refuerzo", "Logística"],
     keywords: ["Overol bicolor", "Overol logística", "Overol montacargas"],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Overol+Bicolor",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Refuerzos+Cordura"
+      "/productos/uniforme/estilista-rosa-atras.jpg",
+      "/productos/uniforme/estilista-rosa-frente.jpg"
     ],
     featured: false
   },
@@ -317,8 +317,8 @@ export const products = [
       "Chalecos acolchados empresas"
     ],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Chaleco+Acolchado",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Detalle+Bolsillos"
+      "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
+      "/productos/chalecos/chelco-naranja-reflectivo.jpg"
     ],
     featured: false
   },
@@ -346,8 +346,7 @@ export const products = [
       "Gorras campaña política por mayor"
     ],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Gorras+Publicitarias",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Variantes+Trucker"
+      "/productos/gorras/bisera/leonisa.jpg"
     ],
     featured: false
   },
@@ -374,8 +373,8 @@ export const products = [
       "Bolsas ecológicas cambre fábrica"
     ],
     images: [
-      "https://placehold.co/600x600/1f2937/ffffff?text=Bolsas+Cambre",
-      "https://placehold.co/600x600/4b5563/ffffff?text=Impresion+Full+Color"
+      "/productos/bolsas/bolsa - nuca .jpg",
+      "/productos/bolsas/bolsa peq.jpg"
     ],
     featured: false
   },

@@ -14,12 +14,12 @@ export default function ProductCard({ product, showCategoryLink = true }) {
   return (
     <div className="border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition">
       {images.length > 0 && (
-        <div className="relative group mb-4 aspect-square rounded-lg overflow-hidden bg-gray-50 border border-gray-100">
+        <div className="relative group mb-4 aspect-[9/16] rounded-lg overflow-hidden bg-gray-50 border border-gray-100">
           <Image
             src={images[current]}
             alt={`${product.title} - vista ${current + 1}`}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority={current === 0}
             unoptimized

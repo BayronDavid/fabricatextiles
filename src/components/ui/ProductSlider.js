@@ -16,13 +16,13 @@ export default function ProductSlider({ images, title }) {
   if (!images || images.length === 0) return null;
 
   return (
-    <div className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-square border border-gray-200">
+    <div className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200">
       <div className="relative w-full h-full">
         <Image 
           src={images[currentIndex]} 
           alt={`${title} - Vista ${currentIndex + 1}`}
           fill
-          className="object-cover transition-transform duration-500"
+          className="object-contain transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority={currentIndex === 0}
           unoptimized
