@@ -18,6 +18,20 @@ function getProduct(slug) {
   return products.find((p) => p.slug === slug);
 }
 
+// Función para generar variaciones de texto y evitar contenido duplicado masivo
+function getDynamicDescription(city, product) {
+  const variations = [
+    `Somos proveedores directos de ${product.shortTitle.toLowerCase()} para empresas en ${city.name}. Garantizamos confección de alta resistencia y cumplimiento en tiempos de entrega.`,
+    `¿Busca fábrica de ${product.shortTitle.toLowerCase()}? Despachamos desde nuestra planta en Bogotá hacia ${city.name} con precios de manufactura y garantía de calidad.`,
+    `Dotación industrial certificada: ${product.shortTitle} disponible para envío inmediato a ${city.name}. Atendemos requerimientos de seguridad privada y licitaciones.`,
+    `Abastecemos a ${city.name} con ${product.shortTitle.toLowerCase()} de larga duración. Sin intermediarios: trato directo con fábrica y gestión documental completa.`
+  ];
+
+  // Selección determinista para que siempre sea el mismo texto para la misma URL
+  const index = (city.slug.length + product.slug.length) % variations.length;
+  return variations[index];
+}
+
 export async function generateStaticParams() {
   return cities.flatMap((city) =>
     products.map((product) => ({
@@ -40,7 +54,7 @@ export async function generateMetadata({ params }) {
   }
 
   const title = `Fábrica de ${product.shortTitle} en ${city.name} | Venta al Por Mayor`;
-  const description = `Somos proveedores directos de ${product.shortTitle} con despacho a ${city.name}. Planta en Bogotá, precios de fábrica y tiempos ágiles.`;
+  const description = getDynamicDescription(city, product); // Usamos la dinámica aquí también
   const url = `${siteUrl}/venta/${city.slug}/${product.slug}`;
 
   return {
@@ -68,7 +82,8 @@ export default async function VentaCiudadProductoPage({ params }) {
   }
 
   const heroTitle = `Venta de ${product.shortTitle} con despacho a ${city.name}`;
-  const heroDescription = `Fábrica en Bogotá con logística directa a ${city.name}. Producción propia, cumplimiento en tiempos y personalización para licitaciones y contratos B2B.`;
+  // Descripción dinámica para el H1/Hero
+  const heroDescription = getDynamicDescription(city, product);
   const pageUrl = `${siteUrl}/venta/${city.slug}/${product.slug}`;
 
   const jsonLd = {
@@ -99,15 +114,15 @@ export default async function VentaCiudadProductoPage({ params }) {
   const uspCards = [
     {
       title: 'Planta en Bogotá',
-      text: 'Producción propia, control de calidad y stock de materia prima listo para despachar.',
+      text: 'Producción propia, control de calidad e inventario de materia prima listo para confeccionar.', // "Stock" -> "Inventario"
     },
     {
       title: `Ruta a ${city.name}`,
-      text: 'Logística terrestre y aérea con entregas programadas 24-72h según volumen.',
+      text: 'Logística terrestre y aérea con entregas programadas 24-72h según volumen del pedido.',
     },
     {
       title: 'Personalización total',
-      text: 'Bordado, estampado y especificaciones técnicas según pliego o manual interno.',
+      text: 'Bordado, estampado y especificaciones técnicas según pliego o manual de imagen corporativa.',
     },
   ];
 
@@ -188,7 +203,7 @@ export default async function VentaCiudadProductoPage({ params }) {
                 <ul className="space-y-3 text-sm text-gray-700">
                   <li className="flex gap-2">
                     <span className="mt-1 w-1.5 h-1.5 rounded-full bg-gray-400"></span>
-                    Lead time estimado: 24-72h según lote y personalización.
+                    Tiempo de entrega estimado: 24-72h según lote. {/* "Lead time" -> "Tiempo de entrega" */}
                   </li>
                   <li className="flex gap-2">
                     <span className="mt-1 w-1.5 h-1.5 rounded-full bg-gray-400"></span>
@@ -200,7 +215,7 @@ export default async function VentaCiudadProductoPage({ params }) {
                   </li>
                   <li className="flex gap-2">
                     <span className="mt-1 w-1.5 h-1.5 rounded-full bg-gray-400"></span>
-                    Muestras rápidas cuando aplica el proyecto.
+                    Muestras físicas cuando el proyecto lo amerita.
                   </li>
                 </ul>
               </div>

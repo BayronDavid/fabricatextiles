@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BARRA DE CLIENTES (Social Proof) */}
+        {/* BARRA DE CLIENTES (Respaldo Social) */}
         <section className="py-12 bg-gray-50 border-y border-gray-200">
           <div className="container mx-auto px-4">
             <p className="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-8">
@@ -149,7 +149,7 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                     unoptimized
                   />
-                  <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-bold uppercase rounded">Top Ventas</div>
+                  <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-bold uppercase rounded">Más Vendido</div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Seguridad Privada</h3>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-3">
@@ -219,7 +219,7 @@ export default function Home() {
                   <ul className="space-y-4 mt-6">
                     <li className="flex items-start gap-3">
                       <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                      <span><strong>Stock de Materia Prima:</strong> Telas en bodega para no depender de proveedores externos.</span>
+                      <span><strong>Inventario de Materia Prima:</strong> Telas en bodega para no depender de proveedores externos.</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
