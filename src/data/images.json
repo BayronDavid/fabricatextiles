@@ -1,0 +1,107 @@
+[
+  {
+    "path": "/productos/bolsas/bolsa - nuca .jpg",
+    "directory": "/productos/bolsas",
+    "category": "bolsas",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/bolsas/bolsa peq.jpg",
+    "directory": "/productos/bolsas",
+    "category": "bolsas",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
+    "directory": "/productos/chalecos",
+    "category": "chalecos",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/chalecos/chelco-naranja-reflectivo.jpg",
+    "directory": "/productos/chalecos",
+    "category": "chalecos",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/acrilico/blanca nuca - lado.jpg",
+    "directory": "/productos/gorras/acrilico",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/acrilico/blanca nuca . back.jpg",
+    "directory": "/productos/gorras/acrilico",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/acrilico/blanca, nuca.jpg",
+    "directory": "/productos/gorras/acrilico",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/all.jpg",
+    "directory": "/productos/gorras",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/bisera/leonisa.jpg",
+    "directory": "/productos/gorras/bisera",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/goleanas/acon-azul.jpg",
+    "directory": "/productos/gorras/goleanas",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/goleanas/horzon.jpg",
+    "directory": "/productos/gorras/goleanas",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/malla/blanca-negra.jpg",
+    "directory": "/productos/gorras/malla",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorras/malla/politica-roja.jpg",
+    "directory": "/productos/gorras/malla",
+    "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/uniforme/estilista-rosa-atras.jpg",
+    "directory": "/productos/uniforme",
+    "category": "uniforme",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/uniforme/estilista-rosa-frente.jpg",
+    "directory": "/productos/uniforme",
+    "category": "uniforme",
+    "favorite": false,
+    "tags": []
+  }
+]
