@@ -35,26 +35,26 @@
     {
         "id": "P-GT-010",
         "slug": "gorras-camioneras-trucker",
-        "title": "Gorras Camioneras Trucker de Malla para Promoción",
+        "title": "Gorras Camioneras Tipo Malla para Promoción",
         "shortTitle": "Gorras Camioneras",
         "category": "Masivo / Promocional",
         "family": "Gorras",
         "segment": "Eventos y Promoción",
-        "description": "Gorras trucker con malla trasera. Frente en espuma ideal para técnicas de marcación full color y alta definición como Sublimación y DTF.",
+        "description": "Gorras tipo malla con ajuste trasero. Frente en espuma ideal para técnicas de marcación full color y alta definición como Sublimación y DTF.",
         "features": [
             "Frente apto para Sublimación, DTF o Screen",
             "Malla respirable en espalda",
-            "Cierre snapback regulable",
+            "Cierre plástico graduable",
             "Producción masiva para eventos"
         ],
         "tags": [
-            "Trucker",
+            "Gorra Malla",
             "Malla",
             "Promocional"
         ],
         "keywords": [
             "Gorras camioneras",
-            "Gorras trucker por mayor",
+            "Gorras malla por mayor",
             "Gorras sublimación",
             "Gorras DTF"
         ],
@@ -103,7 +103,7 @@
         "shortTitle": "Pavas de Sol",
         "category": "Seguridad",
         "family": "Gorras",
-        "segment": "Outdoor y Operaciones",
+        "segment": "Trabajo en Exteriores y Operaciones",
         "description": "Pavas livianas con ala amplia para protección solar total. Permiten marcación frontal en bordado o estampado flexible (DTF/Vinilo) para no afectar la estructura.",
         "features": [
             "Ala 360° para sombra total",
@@ -385,7 +385,7 @@
         "shortTitle": "Chaleco Acolchado",
         "category": "Industrial",
         "family": "Chalecos",
-        "segment": "Logística y Retail",
+        "segment": "Logística y Comercio",
         "description": "Chaleco acolchado para zonas frías. Permite bordado (antes de armar) o parches DTF/Vinilo de alta adherencia sobre el poliéster.",
         "features": [
             "Apto para Bordado o Parche DTF",
@@ -396,11 +396,11 @@
         "tags": [
             "Acolchado",
             "Logística",
-            "Picking"
+            "Alistamiento"
         ],
         "keywords": [
             "Chaleco acolchado",
-            "Chaleco picking",
+            "Chaleco alistamiento",
             "Chaleco logística",
             "Chalecos acolchados empresas"
         ],
@@ -421,7 +421,7 @@
         "description": "Gorras para campañas masivas. Opciones económicas con Screen o Sublimación, y opciones premium con Bordado o DTF.",
         "features": [
             "Técnicas: Bordado, Screen, Sublimación, DTF",
-            "Lotes grandes con lead time corto",
+            "Lotes grandes con tiempo de entrega corto",
             "Varias siluetas: trucker, plana, deportiva",
             "Colores corporativos"
         ],

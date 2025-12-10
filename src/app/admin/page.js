@@ -115,6 +115,25 @@ export default function AdminPage() {
     );
   };
 
+  const moveImage = (imagePath, direction) => {
+    if (!selectedProduct) return;
+    setProducts((prev) =>
+      prev.map((product) => {
+        if (product.id !== selectedId) return product;
+        const currentImages = product.images ?? [];
+        const index = currentImages.findIndex((img) => img === imagePath);
+        if (index === -1) return product;
+        const targetIndex = index + direction;
+        if (targetIndex < 0 || targetIndex >= currentImages.length) return product;
+
+        const reordered = [...currentImages];
+        const [removed] = reordered.splice(index, 1);
+        reordered.splice(targetIndex, 0, removed);
+        return { ...product, images: reordered };
+      })
+    );
+  };
+
   const handleSave = () => {
     startSaving(async () => {
       await saveProducts(products);
@@ -282,6 +301,24 @@ export default function AdminPage() {
                       >
                         ×
                       </button>
+                      <div className="absolute left-1 bottom-1 flex gap-1">
+                        <button
+                          type="button"
+                          onClick={() => moveImage(imagePath, -1)}
+                          className="rounded bg-white/85 px-2 text-[11px] font-semibold text-gray-700 shadow hover:bg-white"
+                          aria-label="Mover imagen hacia arriba"
+                        >
+                          ↑
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => moveImage(imagePath, 1)}
+                          className="rounded bg-white/85 px-2 text-[11px] font-semibold text-gray-700 shadow hover:bg-white"
+                          aria-label="Mover imagen hacia abajo"
+                        >
+                          ↓
+                        </button>
+                      </div>
                     </div>
                   ))}
                 </div>
