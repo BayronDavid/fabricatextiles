@@ -1,9 +1,12 @@
 "use client";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 
 export default function ProductSlider({ images, title }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
+  const startXRef = useRef(0);
+  const isPointerDownRef = useRef(false);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -16,7 +19,34 @@ export default function ProductSlider({ images, title }) {
   if (!images || images.length === 0) return null;
 
   return (
-    <div className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200">
+    <div
+      ref={containerRef}
+      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200"
+      // Prefer vertical scrolling; allow pointer handling for horizontal swipes
+      style={{ touchAction: 'pan-y' }}
+      onPointerDown={(e) => {
+        isPointerDownRef.current = true;
+        startXRef.current = e.clientX;
+        try { e.currentTarget.setPointerCapture && e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {}
+      }}
+      onPointerMove={(e) => {
+        if (!isPointerDownRef.current) return;
+        // prevent accidental text selection; we don't translate visually
+      }}
+      onPointerUp={(e) => {
+        if (!isPointerDownRef.current) return;
+        isPointerDownRef.current = false;
+        const delta = e.clientX - startXRef.current;
+        const threshold = 50; // px
+        if (delta > threshold) {
+          prevSlide();
+        } else if (delta < -threshold) {
+          nextSlide();
+        }
+        try { e.currentTarget.releasePointerCapture && e.currentTarget.releasePointerCapture(e.pointerId); } catch (err) {}
+      }}
+      onPointerCancel={() => { isPointerDownRef.current = false; }}
+    >
       <div className="relative w-full h-full">
         <Image 
           src={images[currentIndex]} 

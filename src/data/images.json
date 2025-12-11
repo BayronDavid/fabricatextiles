@@ -14,6 +14,13 @@
     "tags": []
   },
   {
+    "path": "/productos/chaleco verde.jpg",
+    "directory": "/productos",
+    "category": "chaleco verde.jpg",
+    "favorite": false,
+    "tags": []
+  },
+  {
     "path": "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
     "directory": "/productos/chalecos",
     "category": "chalecos",
@@ -24,6 +31,34 @@
     "path": "/productos/chalecos/chelco-naranja-reflectivo.jpg",
     "directory": "/productos/chalecos",
     "category": "chalecos",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/goleana 3poses.jpg",
+    "directory": "/productos",
+    "category": "goleana 3poses.jpg",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/goleana.jpg",
+    "directory": "/productos",
+    "category": "goleana.jpg",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorra acrilica.jpg",
+    "directory": "/productos",
+    "category": "gorra acrilica.jpg",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorra malla.jpg",
+    "directory": "/productos",
+    "category": "gorra malla.jpg",
     "favorite": false,
     "tags": []
   },
@@ -87,6 +122,27 @@
     "path": "/productos/gorras/malla/politica-roja.jpg",
     "directory": "/productos/gorras/malla",
     "category": "gorras",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/gorrra verde, blanca.jpg",
+    "directory": "/productos",
+    "category": "gorrra verde, blanca.jpg",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/pava frente.jpg",
+    "directory": "/productos",
+    "category": "pava frente.jpg",
+    "favorite": false,
+    "tags": []
+  },
+  {
+    "path": "/productos/pava lado.jpg",
+    "directory": "/productos",
+    "category": "pava lado.jpg",
     "favorite": false,
     "tags": []
   },

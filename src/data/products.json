@@ -1,540 +1,531 @@
 [
-    {
-        "id": "P-GL-001",
-        "slug": "goleanas-legionario",
-        "title": "Fábrica de Goleanas Tipo Legionario con Protección UV",
-        "shortTitle": "Goleanas Legionario",
-        "category": "Seguridad",
-        "family": "Gorras",
-        "segment": "Seguridad Privada",
-        "description": "Goleanas tipo legionario diseñadas para máxima protección solar. Personalizables con su marca en diversas técnicas según el presupuesto y la necesidad de durabilidad.",
-        "features": [
-            "Protección UV certificada",
-            "Tela de alta resistencia al rasgado",
-            "Nuca protectora reglamentaria",
-            "Personalización: Bordado, DTF o Vinilo"
-        ],
-        "tags": [
-            "UV",
-            "Supervigilancia",
-            "Nuca protectora"
-        ],
-        "keywords": [
-            "Gorra legionario",
-            "Protección solar vigilancia",
-            "Normativa dotación",
-            "Cachucha nuca",
-            "Goleanas tipo legionario"
-        ],
-        "images": [
-            "/productos/gorras/goleanas/acon-azul.jpg",
-            "/productos/gorras/goleanas/horzon.jpg"
-        ],
-        "featured": true
-    },
-    {
-        "id": "P-GT-010",
-        "slug": "gorras-camioneras-trucker",
-        "title": "Gorras Camioneras Tipo Malla para Promoción",
-        "shortTitle": "Gorras Camioneras",
-        "category": "Masivo / Promocional",
-        "family": "Gorras",
-        "segment": "Eventos y Promoción",
-        "description": "Gorras tipo malla con ajuste trasero. Frente en espuma ideal para técnicas de marcación full color y alta definición como Sublimación y DTF.",
-        "features": [
-            "Frente apto para Sublimación, DTF o Screen",
-            "Malla respirable en espalda",
-            "Cierre plástico graduable",
-            "Producción masiva para eventos"
-        ],
-        "tags": [
-            "Gorra Malla",
-            "Malla",
-            "Promocional"
-        ],
-        "keywords": [
-            "Gorras camioneras",
-            "Gorras malla por mayor",
-            "Gorras sublimación",
-            "Gorras DTF"
-        ],
-        "images": [
-            "/productos/gorras/malla/blanca-negra.jpg",
-            "/productos/gorras/malla/politica-roja.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-GD-011",
-        "slug": "gorras-drill-corporativas",
-        "title": "Gorras en Drill Corporativas (Bordado / DTF / Vinilo)",
-        "shortTitle": "Gorras Drill",
-        "category": "Masivo / Promocional",
-        "family": "Gorras",
-        "segment": "Corporativo",
-        "description": "Gorras en drill pesado de alta calidad. Ideales para bordado 3D de alto relieve o logos complejos en DTF que requieren gran detalle.",
-        "features": [
-            "Drill 100% algodón de alto gramaje",
-            "Apta para Bordado 3D y apliques DTF",
-            "Cierre metálico o velcro",
-            "Colores corporativos y combinaciones bicolor"
-        ],
-        "tags": [
-            "Drill",
-            "Bordado 3D",
-            "Corporativo"
-        ],
-        "keywords": [
-            "Gorras drill bordadas",
-            "Gorras corporativas",
-            "Gorras vinilo textil"
-        ],
-        "images": [
-            "/productos/gorras/acrilico/blanca nuca - lado.jpg",
-            "/productos/gorras/acrilico/blanca nuca . back.jpg",
-            "/productos/gorras/acrilico/blanca, nuca.jpg"
-        ],
-        "featured": true
-    },
-    {
-        "id": "P-PV-012",
-        "slug": "pavas-para-sol",
-        "title": "Pavas para Sol con Ala Amplia y Protección UV",
-        "shortTitle": "Pavas de Sol",
-        "category": "Seguridad",
-        "family": "Gorras",
-        "segment": "Trabajo en Exteriores y Operaciones",
-        "description": "Pavas livianas con ala amplia para protección solar total. Permiten marcación frontal en bordado o estampado flexible (DTF/Vinilo) para no afectar la estructura.",
-        "features": [
-            "Ala 360° para sombra total",
-            "Marcación sugerida: Bordado o DTF",
-            "Cordon elástico ajustable",
-            "Opciones impermeables y microperforadas"
-        ],
-        "tags": [
-            "Protección solar",
-            "Ala amplia",
-            "UV"
-        ],
-        "keywords": [
-            "Pavas para sol",
-            "Sombreros industriales",
-            "Protección UV obras"
-        ],
-        "images": [
-            "/productos/uniforme/estilista-rosa-atras.jpg",
-            "/productos/uniforme/estilista-rosa-frente.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-CH-002",
-        "slug": "chalecos-vigilancia",
-        "title": "Chalecos Porta-Elementos Reglamentarios SuperVigilancia",
-        "shortTitle": "Chalecos Tácticos",
-        "category": "Seguridad",
-        "family": "Chalecos",
-        "segment": "Seguridad Privada",
-        "description": "Chalecos tácticos porta-elementos. Espacios designados para bordado directo de escudo en pecho y espalda, o parches termo-fijados.",
-        "features": [
-            "Reata porta radio reforzada",
-            "Espalda apta para Bordado o Vinilo Reflectivo",
-            "Material impermeable y transpirable",
-            "Cintas reflectivas grado ingeniería"
-        ],
-        "tags": [
-            "Reflectivo",
-            "Impermeable",
-            "Porta radio"
-        ],
-        "keywords": [
-            "Chaleco táctico",
-            "Seguridad privada",
-            "Reata porta radio",
-            "Chaleco escolta",
-            "Fábrica dotaciones seguridad privada"
-        ],
-        "images": [
-            "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
-            "/productos/chalecos/chelco-naranja-reflectivo.jpg"
-        ],
-        "featured": true
-    },
-    {
-        "id": "P-CH-013",
-        "slug": "chaleco-alta-visibilidad-obra",
-        "title": "Chaleco Alta Visibilidad con Cintas Reflectivas 360°",
-        "shortTitle": "Chaleco Alta Visibilidad",
-        "category": "Seguridad",
-        "family": "Chalecos",
-        "segment": "Construcción y Vial",
-        "description": "Chaleco liviano para obras civiles. Ideal para estampado en Screen (económico) o DTF para logos a color en pecho y espalda.",
-        "features": [
-            "Reflectivos 2\" + 2\" en pecho y espalda",
-            "Marcación recomendada: Screen o DTF",
-            "Bolsillo porta radio y porta credencial",
-            "Opción color naranja o amarillo flúor"
-        ],
-        "tags": [
-            "Reflectivo",
-            "Obra",
-            "Alta visibilidad"
-        ],
-        "keywords": [
-            "Chaleco alta visibilidad",
-            "Chaleco reflectivo obra",
-            "Chaleco seguridad vial"
-        ],
-        "images": [
-            "/productos/chalecos/chelco-naranja-reflectivo.jpg",
-            "/productos/chalecos/Chaleco-azul-bolsillos.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-CH-014",
-        "slug": "chaleco-brigadista-reflectivo",
-        "title": "Chaleco Brigadista Personalizado (Bordado / Estampado)",
-        "shortTitle": "Chaleco Brigadista",
-        "category": "Seguridad",
-        "family": "Chalecos",
-        "segment": "Emergencias y EHS",
-        "description": "Chaleco para brigadas de emergencia. Marcación de rol (Brigadista, EHS) mediante bordado directo, vinilo textil de alta durabilidad o DTF.",
-        "features": [
-            "Roles personalizables (Vinilo/Bordado)",
-            "Bolsillo porta radio y baterías",
-            "Reflectivos perimetrales y en hombros",
-            "Tejido anti desgarre con refuerzos"
-        ],
-        "tags": [
-            "Brigada",
-            "EHS",
-            "Reflectivo"
-        ],
-        "keywords": [
-            "Chaleco brigadista",
-            "Chaleco evacuación",
-            "Chaleco EHS",
-            "Chalecos reflectivos brigadista"
-        ],
-        "images": [
-            "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
-            "/productos/chalecos/chelco-naranja-reflectivo.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-IM-003",
-        "slug": "impermeables-moto",
-        "title": "Impermeables Industriales Calibre 18 para Motorizados",
-        "shortTitle": "Impermeables Moto",
-        "category": "Seguridad",
-        "family": "Impermeables",
-        "segment": "Seguridad y Logística",
-        "description": "Conjunto impermeable vulcanizado calibre 18. Marcación con tintas vinílicas especiales (Screen) para garantizar adherencia sobre PVC.",
-        "features": [
-            "PVC Calibre 18 vulcanizado",
-            "Marcación con tinta vinílica (Screen)",
-            "Reflectivos de alta visibilidad",
-            "Refuerzo en entrepierna y axilas"
-        ],
-        "tags": [
-            "Vulcanizado",
-            "Reflectivo",
-            "Calibre 18"
-        ],
-        "keywords": [
-            "Dotación mensajería",
-            "Impermeable vulcanizado",
-            "Rompevientos reflectivo"
-        ],
-        "images": [
-            "/productos/uniforme/estilista-rosa-atras.jpg",
-            "/productos/uniforme/estilista-rosa-frente.jpg"
-        ],
-        "featured": true
-    },
-    {
-        "id": "P-IM-015",
-        "slug": "impermeable-reflectivo-calibre20",
-        "title": "Impermeable Reflectivo Calibre 20 con Costuras Selladas",
-        "shortTitle": "Impermeable Reflectivo",
-        "category": "Seguridad",
-        "family": "Impermeables",
-        "segment": "Vigilancia y Mensajería",
-        "description": "Traje impermeable calibre 20. Permite estampado de logos en espalda con técnica de screen para PVC, asegurando impermeabilidad.",
-        "features": [
-            "Apto para estampado Screen PVC",
-            "Cintas reflectivas 3M pecho y espalda",
-            "Ventilación trasera y malla interna",
-            "Pantalón con pretina elástica"
-        ],
-        "tags": [
-            "Impermeable",
-            "Reflectivo",
-            "Calibre 20"
-        ],
-        "keywords": [
-            "Impermeable reflectivo",
-            "Traje lluvia vigilantes",
-            "Impermeable motorizados"
-        ],
-        "images": [
-            "/productos/uniforme/estilista-rosa-atras.jpg",
-            "/productos/uniforme/estilista-rosa-frente.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-OV-006",
-        "slug": "overoles-industriales",
-        "title": "Overoles Industriales y Ropa de Trabajo Resistente",
-        "shortTitle": "Overoles Industriales",
-        "category": "Industrial",
-        "family": "Overoles",
-        "segment": "Industrial y Logística",
-        "description": "Overoles para trabajo pesado. Soportan bordado directo industrial, parches bordados o estampados resistentes (DTF/Vinilo) en espalda.",
-        "features": [
-            "Apto para Bordado, DTF o Screen",
-            "Costuras reforzadas triple aguja",
-            "Bolsillos funcionales y refuerzos",
-            "Opciones con retardante de llama"
-        ],
-        "tags": [
-            "Ignífugo",
-            "Triple aguja",
-            "Trabajo pesado"
-        ],
-        "keywords": [
-            "Overoles industriales",
-            "Ropa trabajo resistente",
-            "Dotación industrial"
-        ],
-        "images": [
-            "/productos/uniforme/estilista-rosa-atras.jpg",
-            "/productos/uniforme/estilista-rosa-frente.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-OV-016",
-        "slug": "overol-ignifugo-retardante-llama",
-        "title": "Overol Ignífugo Retardante de Llama con Reflectivos",
-        "shortTitle": "Overol Ignífugo",
-        "category": "Industrial",
-        "family": "Overoles",
-        "segment": "Oil & Gas / Energía",
-        "description": "Overol en tela retardante de llama. Se recomienda bordado con hilo ignífugo para mantener la certificación de seguridad.",
-        "features": [
-            "Tela retardante inherentemente",
-            "Recomendado: Bordado hilo ignífugo",
-            "Cintas reflectivas ignífugas clase II",
-            "Costuras triple aguja"
-        ],
-        "tags": [
-            "Ignífugo",
-            "Clase II",
-            "Oil & Gas"
-        ],
-        "keywords": [
-            "Overol ignífugo",
-            "Overol retardante de llama",
-            "Overol refinería"
-        ],
-        "images": [
-            "/productos/uniforme/estilista-rosa-atras.jpg",
-            "/productos/uniforme/estilista-rosa-frente.jpg"
-        ],
-        "featured": true
-    },
-    {
-        "id": "P-OV-017",
-        "slug": "overol-bicolor-reforzado",
-        "title": "Overol Bicolor Reforzado para Logística",
-        "shortTitle": "Overol Bicolor",
-        "category": "Industrial",
-        "family": "Overoles",
-        "segment": "Logística y Almacenamiento",
-        "description": "Overol bicolor operativo. Perfecto para personalización de marca grande en espalda mediante Screen, DTF o Vinilo Textil.",
-        "features": [
-            "Personalización: Bordado, DTF, Vinilo o Screen",
-            "Refuerzos en hombros y rodillas",
-            "Cintas reflectivas grado ingeniería",
-            "Cierre oculto y bolsillos funcionales"
-        ],
-        "tags": [
-            "Bicolor",
-            "Refuerzo",
-            "Logística"
-        ],
-        "keywords": [
-            "Overol bicolor",
-            "Overol logística",
-            "Overol montacargas"
-        ],
-        "images": [
-            "/productos/uniforme/estilista-rosa-atras.jpg",
-            "/productos/uniforme/estilista-rosa-frente.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-CH-018",
-        "slug": "chaleco-acolchados-logistica",
-        "title": "Chalecos Acolchados con Personalización (Bordado/DTF)",
-        "shortTitle": "Chaleco Acolchado",
-        "category": "Industrial",
-        "family": "Chalecos",
-        "segment": "Logística y Comercio",
-        "description": "Chaleco acolchado para zonas frías. Permite bordado (antes de armar) o parches DTF/Vinilo de alta adherencia sobre el poliéster.",
-        "features": [
-            "Apto para Bordado o Parche DTF",
-            "Acolchado ligero con forro interno",
-            "Bolsillos laterales y porta escáner",
-            "Cremallera reforzada"
-        ],
-        "tags": [
-            "Acolchado",
-            "Logística",
-            "Alistamiento"
-        ],
-        "keywords": [
-            "Chaleco acolchado",
-            "Chaleco alistamiento",
-            "Chaleco logística",
-            "Chalecos acolchados empresas"
-        ],
-        "images": [
-            "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
-            "/productos/chalecos/chelco-naranja-reflectivo.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-GP-004",
-        "slug": "gorras-publicitarias",
-        "title": "Gorras Publicitarias (Bordado, Estampado, Sublimación)",
-        "shortTitle": "Gorras Publicitarias",
-        "category": "Masivo / Promocional",
-        "family": "Gorras",
-        "segment": "Eventos y Promoción",
-        "description": "Gorras para campañas masivas. Opciones económicas con Screen o Sublimación, y opciones premium con Bordado o DTF.",
-        "features": [
-            "Técnicas: Bordado, Screen, Sublimación, DTF",
-            "Lotes grandes con tiempo de entrega corto",
-            "Varias siluetas: trucker, plana, deportiva",
-            "Colores corporativos"
-        ],
-        "tags": [
-            "Eventos",
-            "Campaña política",
-            "Bordado"
-        ],
-        "keywords": [
-            "Gorras publicitarias",
-            "Gorras campaña política",
-            "Gorras bordadas por mayor",
-            "Fábrica gorras publicitarias",
-            "Gorras campaña política por mayor"
-        ],
-        "images": [
-            "/productos/gorras/bisera/leonisa.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-BC-005",
-        "slug": "bolsas-cambre",
-        "title": "Bolsas Cambre y Ecológicas con Estampado",
-        "shortTitle": "Bolsas Cambre",
-        "category": "Masivo / Promocional",
-        "family": "Bolsas",
-        "segment": "Promoción",
-        "description": "Bolsas ecológicas en cambre. Ideales para estampado en Screen a 1 o 2 tintas, o DTF para logos a todo color.",
-        "features": [
-            "Impresión: Screen (Tinta) o DTF (Full Color)",
-            "Material cambre / tela no tejida",
-            "Asa resistente para peso promocional",
-            "Plazos rápidos para eventos"
-        ],
-        "tags": [
-            "Eventos",
-            "Impresión",
-            "Ecológica"
-        ],
-        "keywords": [
-            "Bolsas cambre",
-            "Bolsas tela no tejida",
-            "Bolsas publicitarias",
-            "Bolsas ecológicas cambre fábrica"
-        ],
-        "images": [
-            "/productos/bolsas/bolsa - nuca .jpg",
-            "/productos/bolsas/bolsa peq.jpg"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-MQ-008",
-        "slug": "maquila-bordado-industrial",
-        "title": "Servicio de Personalización Textil (Bordado, DTF, Screen)",
-        "shortTitle": "Maquila de Personalización",
-        "category": "Servicios",
-        "family": "Maquila",
-        "segment": "Servicios B2B",
-        "description": "Servicio de maquila para marcas. Ofrecemos Bordado multicabezal, impresión DTF por metros y estampado en Screen o Sublimación.",
-        "features": [
-            "Bordado industrial alta densidad",
-            "Impresión y planchado DTF / Vinilo",
-            "Estampado Screen y Sublimación",
-            "Tiempos rápidos para campañas"
-        ],
-        "tags": [
-            "Bordado",
-            "Licitaciones",
-            "Rápido"
-        ],
-        "keywords": [
-            "Maquila bordado",
-            "Bordado industrial",
-            "Servicio bordado por mayor",
-            "Servicio de estampado"
-        ],
-        "images": [
-            "https://placehold.co/600x600/1f2937/ffffff?text=Bordado+Industrial",
-            "https://placehold.co/600x600/4b5563/ffffff?text=Terminacion"
-        ],
-        "featured": false
-    },
-    {
-        "id": "P-MQ-009",
-        "slug": "maquila-corte-confeccion",
-        "title": "Maquila de Corte y Confección para Marcas y Licitaciones",
-        "shortTitle": "Maquila Corte & Confección",
-        "category": "Servicios",
-        "family": "Maquila",
-        "segment": "Servicios B2B",
-        "description": "Servicio integral de corte y confección como planta satélite. Ideal para marcas de ropa, eventos y licitaciones que requieren capacidad instalada.",
-        "features": [
-            "Corte, confección y terminación",
-            "Capacidad instalada para grandes volúmenes",
-            "Control de calidad por lote",
-            "Gestión ágil para licitaciones"
-        ],
-        "tags": [
-            "Maquila",
-            "Licitaciones",
-            "Volumen"
-        ],
-        "keywords": [
-            "Servicio de corte",
-            "Maquila confección",
-            "Planta satélite costura"
-        ],
-        "images": [
-            "https://placehold.co/600x600/1f2937/ffffff?text=Maquila+Corte",
-            "https://placehold.co/600x600/4b5563/ffffff?text=Linea+Confeccion"
-        ],
-        "featured": false
-    }
+  {
+    "id": "P-GL-001",
+    "slug": "goleanas-legionario",
+    "title": "Fábrica de Goleanas Tipo Legionario con Protección UV",
+    "shortTitle": "Goleanas Legionario",
+    "category": "Seguridad",
+    "family": "Gorras",
+    "segment": "Seguridad Privada",
+    "description": "Goleanas tipo legionario diseñadas para máxima protección solar. Personalizables con su marca en diversas técnicas según el presupuesto y la necesidad de durabilidad.",
+    "features": [
+      "Protección UV certificada",
+      "Tela de alta resistencia al rasgado",
+      "Nuca protectora reglamentaria",
+      "Personalización: Bordado, DTF o Vinilo"
+    ],
+    "tags": [
+      "UV",
+      "Supervigilancia",
+      "Nuca protectora"
+    ],
+    "keywords": [
+      "Gorra legionario",
+      "Protección solar vigilancia",
+      "Normativa dotación",
+      "Cachucha nuca",
+      "Goleanas tipo legionario"
+    ],
+    "images": [
+      "/productos/gorras/goleanas/acon-azul.jpg",
+      "/productos/gorras/goleanas/horzon.jpg",
+      "/productos/goleana 3poses.jpg",
+      "/productos/goleana.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "P-GT-010",
+    "slug": "gorras-camioneras-trucker",
+    "title": "Gorras Camioneras Tipo Malla para Promoción",
+    "shortTitle": "Gorras Camioneras",
+    "category": "Masivo / Promocional",
+    "family": "Gorras",
+    "segment": "Eventos y Promoción",
+    "description": "Gorras tipo malla con ajuste trasero. Frente en espuma ideal para técnicas de marcación full color y alta definición como Sublimación y DTF.",
+    "features": [
+      "Frente apto para Sublimación, DTF o Screen",
+      "Malla respirable en espalda",
+      "Cierre plástico graduable",
+      "Producción masiva para eventos"
+    ],
+    "tags": [
+      "Gorra Malla",
+      "Malla",
+      "Promocional"
+    ],
+    "keywords": [
+      "Gorras camioneras",
+      "Gorras malla por mayor",
+      "Gorras sublimación",
+      "Gorras DTF"
+    ],
+    "images": [
+      "/productos/gorras/malla/blanca-negra.jpg",
+      "/productos/gorras/malla/politica-roja.jpg",
+      "/productos/gorra malla.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-GD-011",
+    "slug": "gorras-drill-corporativas",
+    "title": "Gorras en Drill Corporativas (Bordado / DTF / Vinilo)",
+    "shortTitle": "Gorras Drill",
+    "category": "Masivo / Promocional",
+    "family": "Gorras",
+    "segment": "Corporativo",
+    "description": "Gorras en drill pesado de alta calidad. Ideales para bordado 3D de alto relieve o logos complejos en DTF que requieren gran detalle.",
+    "features": [
+      "Drill 100% algodón de alto gramaje",
+      "Apta para Bordado 3D y apliques DTF",
+      "Cierre metálico o velcro",
+      "Colores corporativos y combinaciones bicolor"
+    ],
+    "tags": [
+      "Drill",
+      "Bordado 3D",
+      "Corporativo"
+    ],
+    "keywords": [
+      "Gorras drill bordadas",
+      "Gorras corporativas",
+      "Gorras vinilo textil"
+    ],
+    "images": [
+      "/productos/gorrra verde, blanca.jpg",
+      "/productos/gorras/acrilico/blanca nuca - lado.jpg",
+      "/productos/gorra acrilica.jpg",
+      "/productos/gorras/acrilico/blanca, nuca.jpg",
+      "/productos/gorras/acrilico/blanca nuca . back.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "P-PV-012",
+    "slug": "pavas-para-sol",
+    "title": "Pavas para Sol con Ala Amplia y Protección UV",
+    "shortTitle": "Pavas de Sol",
+    "category": "Seguridad",
+    "family": "Gorras",
+    "segment": "Trabajo en Exteriores y Operaciones",
+    "description": "Pavas livianas con ala amplia para protección solar total. Permiten marcación frontal en bordado o estampado flexible (DTF/Vinilo) para no afectar la estructura.",
+    "features": [
+      "Ala 360° para sombra total",
+      "Marcación sugerida: Bordado o DTF",
+      "Cordon elástico ajustable",
+      "Opciones impermeables y microperforadas"
+    ],
+    "tags": [
+      "Protección solar",
+      "Ala amplia",
+      "UV"
+    ],
+    "keywords": [
+      "Pavas para sol",
+      "Sombreros industriales",
+      "Protección UV obras"
+    ],
+    "images": [
+      "/productos/pava frente.jpg",
+      "/productos/pava lado.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-CH-002",
+    "slug": "chalecos-vigilancia",
+    "title": "Chalecos Porta-Elementos Reglamentarios SuperVigilancia",
+    "shortTitle": "Chalecos Tácticos",
+    "category": "Seguridad",
+    "family": "Chalecos",
+    "segment": "Seguridad Privada",
+    "description": "Chalecos tácticos porta-elementos. Espacios designados para bordado directo de escudo en pecho y espalda, o parches termo-fijados.",
+    "features": [
+      "Reata porta radio reforzada",
+      "Espalda apta para Bordado o Vinilo Reflectivo",
+      "Material impermeable y transpirable",
+      "Cintas reflectivas grado ingeniería"
+    ],
+    "tags": [
+      "Reflectivo",
+      "Impermeable",
+      "Porta radio"
+    ],
+    "keywords": [
+      "Chaleco táctico",
+      "Seguridad privada",
+      "Reata porta radio",
+      "Chaleco escolta",
+      "Fábrica dotaciones seguridad privada"
+    ],
+    "images": [
+      "/productos/chalecos/Chaleco-azul-bolsillos.jpg",
+      "/productos/chalecos/chelco-naranja-reflectivo.jpg",
+      "/productos/chaleco verde.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "P-CH-013",
+    "slug": "chaleco-alta-visibilidad-obra",
+    "title": "Chaleco Alta Visibilidad con Cintas Reflectivas 360°",
+    "shortTitle": "Chaleco Alta Visibilidad",
+    "category": "Seguridad",
+    "family": "Chalecos",
+    "segment": "Construcción y Vial",
+    "description": "Chaleco liviano para obras civiles. Ideal para estampado en Screen (económico) o DTF para logos a color en pecho y espalda.",
+    "features": [
+      "Reflectivos 2\" + 2\" en pecho y espalda",
+      "Marcación recomendada: Screen o DTF",
+      "Bolsillo porta radio y porta credencial",
+      "Opción color naranja o amarillo flúor"
+    ],
+    "tags": [
+      "Reflectivo",
+      "Obra",
+      "Alta visibilidad"
+    ],
+    "keywords": [
+      "Chaleco alta visibilidad",
+      "Chaleco reflectivo obra",
+      "Chaleco seguridad vial"
+    ],
+    "images": [
+      "/productos/chalecos/chelco-naranja-reflectivo.jpg",
+      "/productos/chaleco verde.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-CH-014",
+    "slug": "chaleco-brigadista-reflectivo",
+    "title": "Chaleco Brigadista Personalizado (Bordado / Estampado)",
+    "shortTitle": "Chaleco Brigadista",
+    "category": "Seguridad",
+    "family": "Chalecos",
+    "segment": "Emergencias y EHS",
+    "description": "Chaleco para brigadas de emergencia. Marcación de rol (Brigadista, EHS) mediante bordado directo, vinilo textil de alta durabilidad o DTF.",
+    "features": [
+      "Roles personalizables (Vinilo/Bordado)",
+      "Bolsillo porta radio y baterías",
+      "Reflectivos perimetrales y en hombros",
+      "Tejido anti desgarre con refuerzos"
+    ],
+    "tags": [
+      "Brigada",
+      "EHS",
+      "Reflectivo"
+    ],
+    "keywords": [
+      "Chaleco brigadista",
+      "Chaleco evacuación",
+      "Chaleco EHS",
+      "Chalecos reflectivos brigadista"
+    ],
+    "images": [
+      "/productos/chalecos/Chaleco-azul-bolsillos.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-IM-003",
+    "slug": "impermeables-moto",
+    "title": "Impermeables Industriales Calibre 18 para Motorizados",
+    "shortTitle": "Impermeables Moto",
+    "category": "Seguridad",
+    "family": "Impermeables",
+    "segment": "Seguridad y Logística",
+    "description": "Conjunto impermeable vulcanizado calibre 18. Marcación con tintas vinílicas especiales (Screen) para garantizar adherencia sobre PVC.",
+    "features": [
+      "PVC Calibre 18 vulcanizado",
+      "Marcación con tinta vinílica (Screen)",
+      "Reflectivos de alta visibilidad",
+      "Refuerzo en entrepierna y axilas"
+    ],
+    "tags": [
+      "Vulcanizado",
+      "Reflectivo",
+      "Calibre 18"
+    ],
+    "keywords": [
+      "Dotación mensajería",
+      "Impermeable vulcanizado",
+      "Rompevientos reflectivo"
+    ],
+    "images": [],
+    "featured": true
+  },
+  {
+    "id": "P-IM-015",
+    "slug": "impermeable-reflectivo-calibre20",
+    "title": "Impermeable Reflectivo Calibre 20 con Costuras Selladas",
+    "shortTitle": "Impermeable Reflectivo",
+    "category": "Seguridad",
+    "family": "Impermeables",
+    "segment": "Vigilancia y Mensajería",
+    "description": "Traje impermeable calibre 20. Permite estampado de logos en espalda con técnica de screen para PVC, asegurando impermeabilidad.",
+    "features": [
+      "Apto para estampado Screen PVC",
+      "Cintas reflectivas 3M pecho y espalda",
+      "Ventilación trasera y malla interna",
+      "Pantalón con pretina elástica"
+    ],
+    "tags": [
+      "Impermeable",
+      "Reflectivo",
+      "Calibre 20"
+    ],
+    "keywords": [
+      "Impermeable reflectivo",
+      "Traje lluvia vigilantes",
+      "Impermeable motorizados"
+    ],
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "P-OV-006",
+    "slug": "overoles-industriales",
+    "title": "Overoles Industriales y Ropa de Trabajo Resistente",
+    "shortTitle": "Overoles Industriales",
+    "category": "Industrial",
+    "family": "Overoles",
+    "segment": "Industrial y Logística",
+    "description": "Overoles para trabajo pesado. Soportan bordado directo industrial, parches bordados o estampados resistentes (DTF/Vinilo) en espalda.",
+    "features": [
+      "Apto para Bordado, DTF o Screen",
+      "Costuras reforzadas triple aguja",
+      "Bolsillos funcionales y refuerzos",
+      "Opciones con retardante de llama"
+    ],
+    "tags": [
+      "Ignífugo",
+      "Triple aguja",
+      "Trabajo pesado"
+    ],
+    "keywords": [
+      "Overoles industriales",
+      "Ropa trabajo resistente",
+      "Dotación industrial"
+    ],
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "P-OV-016",
+    "slug": "overol-ignifugo-retardante-llama",
+    "title": "Overol Ignífugo Retardante de Llama con Reflectivos",
+    "shortTitle": "Overol Ignífugo",
+    "category": "Industrial",
+    "family": "Overoles",
+    "segment": "Oil & Gas / Energía",
+    "description": "Overol en tela retardante de llama. Se recomienda bordado con hilo ignífugo para mantener la certificación de seguridad.",
+    "features": [
+      "Tela retardante inherentemente",
+      "Recomendado: Bordado hilo ignífugo",
+      "Cintas reflectivas ignífugas clase II",
+      "Costuras triple aguja"
+    ],
+    "tags": [
+      "Ignífugo",
+      "Clase II",
+      "Oil & Gas"
+    ],
+    "keywords": [
+      "Overol ignífugo",
+      "Overol retardante de llama",
+      "Overol refinería"
+    ],
+    "images": [],
+    "featured": true
+  },
+  {
+    "id": "P-OV-017",
+    "slug": "overol-bicolor-reforzado",
+    "title": "Overol Bicolor Reforzado para Logística",
+    "shortTitle": "Overol Bicolor",
+    "category": "Industrial",
+    "family": "Overoles",
+    "segment": "Logística y Almacenamiento",
+    "description": "Overol bicolor operativo. Perfecto para personalización de marca grande en espalda mediante Screen, DTF o Vinilo Textil.",
+    "features": [
+      "Personalización: Bordado, DTF, Vinilo o Screen",
+      "Refuerzos en hombros y rodillas",
+      "Cintas reflectivas grado ingeniería",
+      "Cierre oculto y bolsillos funcionales"
+    ],
+    "tags": [
+      "Bicolor",
+      "Refuerzo",
+      "Logística"
+    ],
+    "keywords": [
+      "Overol bicolor",
+      "Overol logística",
+      "Overol montacargas"
+    ],
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "P-CH-018",
+    "slug": "chaleco-acolchados-logistica",
+    "title": "Chalecos Acolchados con Personalización (Bordado/DTF)",
+    "shortTitle": "Chaleco Acolchado",
+    "category": "Industrial",
+    "family": "Chalecos",
+    "segment": "Logística y Comercio",
+    "description": "Chaleco acolchado para zonas frías. Permite bordado (antes de armar) o parches DTF/Vinilo de alta adherencia sobre el poliéster.",
+    "features": [
+      "Apto para Bordado o Parche DTF",
+      "Acolchado ligero con forro interno",
+      "Bolsillos laterales y porta escáner",
+      "Cremallera reforzada"
+    ],
+    "tags": [
+      "Acolchado",
+      "Logística",
+      "Alistamiento"
+    ],
+    "keywords": [
+      "Chaleco acolchado",
+      "Chaleco alistamiento",
+      "Chaleco logística",
+      "Chalecos acolchados empresas"
+    ],
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "P-GP-004",
+    "slug": "gorras-publicitarias",
+    "title": "Gorras Publicitarias (Bordado, Estampado, Sublimación)",
+    "shortTitle": "Gorras Publicitarias",
+    "category": "Masivo / Promocional",
+    "family": "Gorras",
+    "segment": "Eventos y Promoción",
+    "description": "Gorras para campañas masivas. Opciones económicas con Screen o Sublimación, y opciones premium con Bordado o DTF.",
+    "features": [
+      "Técnicas: Bordado, Screen, Sublimación, DTF",
+      "Lotes grandes con tiempo de entrega corto",
+      "Varias siluetas: trucker, plana, deportiva",
+      "Colores corporativos"
+    ],
+    "tags": [
+      "Eventos",
+      "Campaña política",
+      "Bordado"
+    ],
+    "keywords": [
+      "Gorras publicitarias",
+      "Gorras campaña política",
+      "Gorras bordadas por mayor",
+      "Fábrica gorras publicitarias",
+      "Gorras campaña política por mayor"
+    ],
+    "images": [
+      "/productos/gorras/bisera/leonisa.jpg",
+      "/productos/gorras/acrilico/blanca nuca - lado.jpg",
+      "/productos/gorras/malla/politica-roja.jpg",
+      "/productos/gorras/malla/blanca-negra.jpg",
+      "/productos/gorrra verde, blanca.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-BC-005",
+    "slug": "bolsas-cambre",
+    "title": "Bolsas Cambre y Ecológicas con Estampado",
+    "shortTitle": "Bolsas Cambre",
+    "category": "Masivo / Promocional",
+    "family": "Bolsas",
+    "segment": "Promoción",
+    "description": "Bolsas ecológicas en cambre. Ideales para estampado en Screen a 1 o 2 tintas, o DTF para logos a todo color.",
+    "features": [
+      "Impresión: Screen (Tinta) o DTF (Full Color)",
+      "Material cambre / tela no tejida",
+      "Asa resistente para peso promocional",
+      "Plazos rápidos para eventos"
+    ],
+    "tags": [
+      "Eventos",
+      "Impresión",
+      "Ecológica"
+    ],
+    "keywords": [
+      "Bolsas cambre",
+      "Bolsas tela no tejida",
+      "Bolsas publicitarias",
+      "Bolsas ecológicas cambre fábrica"
+    ],
+    "images": [
+      "/productos/bolsas/bolsa - nuca .jpg",
+      "/productos/bolsas/bolsa peq.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-MQ-008",
+    "slug": "maquila-bordado-industrial",
+    "title": "Servicio de Personalización Textil (Bordado, DTF, Screen)",
+    "shortTitle": "Maquila de Personalización",
+    "category": "Servicios",
+    "family": "Maquila",
+    "segment": "Servicios B2B",
+    "description": "Servicio de maquila para marcas. Ofrecemos Bordado multicabezal, impresión DTF por metros y estampado en Screen o Sublimación.",
+    "features": [
+      "Bordado industrial alta densidad",
+      "Impresión y planchado DTF / Vinilo",
+      "Estampado Screen y Sublimación",
+      "Tiempos rápidos para campañas"
+    ],
+    "tags": [
+      "Bordado",
+      "Licitaciones",
+      "Rápido"
+    ],
+    "keywords": [
+      "Maquila bordado",
+      "Bordado industrial",
+      "Servicio bordado por mayor",
+      "Servicio de estampado"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1f2937/ffffff?text=Bordado+Industrial",
+      "https://placehold.co/600x600/4b5563/ffffff?text=Terminacion"
+    ],
+    "featured": false
+  },
+  {
+    "id": "P-MQ-009",
+    "slug": "maquila-corte-confeccion",
+    "title": "Maquila de Corte y Confección para Marcas y Licitaciones",
+    "shortTitle": "Maquila Corte & Confección",
+    "category": "Servicios",
+    "family": "Maquila",
+    "segment": "Servicios B2B",
+    "description": "Servicio integral de corte y confección como planta satélite. Ideal para marcas de ropa, eventos y licitaciones que requieren capacidad instalada.",
+    "features": [
+      "Corte, confección y terminación",
+      "Capacidad instalada para grandes volúmenes",
+      "Control de calidad por lote",
+      "Gestión ágil para licitaciones"
+    ],
+    "tags": [
+      "Maquila",
+      "Licitaciones",
+      "Volumen"
+    ],
+    "keywords": [
+      "Servicio de corte",
+      "Maquila confección",
+      "Planta satélite costura"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1f2937/ffffff?text=Maquila+Corte",
+      "https://placehold.co/600x600/4b5563/ffffff?text=Linea+Confeccion"
+    ],
+    "featured": false
+  }
 ]
