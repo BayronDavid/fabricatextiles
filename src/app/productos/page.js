@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ProductsExplorer from '@/components/ui/ProductsExplorer';
 import { products } from '@/data/products';
+import { WHATSAPP_URL, CONTACT_EMAIL } from '@/data/contact';
 
 export const metadata = {
   title: 'Catálogo de Productos - Confecciones El Arte',
@@ -66,8 +67,8 @@ export default function ProductsPage() {
               <p className="text-gray-300 text-sm mt-2">Atención inmediata por WhatsApp o correo para empresas y licitaciones.</p>
             </div>
             <div className="flex gap-3 flex-wrap">
-              <a href="https://wa.me/573000000000" className="px-5 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100" target="_blank" rel="noopener noreferrer">WhatsApp Fábrica</a>
-              <a href="mailto:comercial@confeccioneselarte.com" className="px-5 py-3 border border-white text-white font-bold rounded-lg hover:bg-white hover:text-gray-900">Correo Comercial</a>
+              <a href={WHATSAPP_URL} className="px-5 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100" target="_blank" rel="noopener noreferrer">WhatsApp Fábrica</a>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="px-5 py-3 border border-white text-white font-bold rounded-lg hover:bg-white hover:text-gray-900">Correo Comercial</a>
             </div>
           </div>
         </section>

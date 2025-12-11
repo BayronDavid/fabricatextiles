@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { WHATSAPP_URL } from '@/data/contact';
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
             <Link href="/#soluciones" className="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-gray-900/20 hover:transform hover:-translate-y-1 transition duration-300">
               Ver Catálogo de Línea
             </Link>
-            <a href="https://wa.me/573000000000" className="bg-white text-gray-700 border border-gray-300 px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition duration-300">
+            <a href={WHATSAPP_URL} className="bg-white text-gray-700 border border-gray-300 px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition duration-300" target="_blank" rel="noopener noreferrer">
               Hablar con Gerencia
             </a>
           </div>

@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { products } from '@/data/products';
+import { WHATSAPP_URL } from '@/data/contact';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,7 +93,7 @@ export default function Header() {
         </nav>
 
         {/* CTA Button */}
-        <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 border-2 border-gray-900 text-gray-900 px-5 py-2 rounded-lg text-sm font-bold hover:bg-gray-900 hover:text-white transition duration-300">
+        <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 border-2 border-gray-900 text-gray-900 px-5 py-2 rounded-lg text-sm font-bold hover:bg-gray-900 hover:text-white transition duration-300">
           <span>WhatsApp Fábrica</span>
         </a>
 
@@ -124,7 +125,7 @@ export default function Header() {
               <Link href="/#capacidad" className="block py-2" onClick={() => setIsMenuOpen(false)}>Capacidad Instalada</Link>
               <Link href="/#contacto" className="block py-2" onClick={() => setIsMenuOpen(false)}>Contacto Empresas</Link>
             </nav>
-            <a href="https://wa.me/573000000000" className="mt-2 inline-flex items-center justify-center border-2 border-gray-900 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-gray-900 hover:text-white transition">WhatsApp Fábrica</a>
+            <a href={WHATSAPP_URL} className="mt-2 inline-flex items-center justify-center border-2 border-gray-900 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-gray-900 hover:text-white transition">WhatsApp Fábrica</a>
           </div>
         </div>
       )}

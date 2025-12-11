@@ -2,6 +2,7 @@ import TopBar from '@/components/ui/TopBar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/ui/Hero';
+import { WHATSAPP_URL } from '@/data/contact';
 import ContactForm from '@/components/ui/ContactForm';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -62,7 +63,7 @@ export default function Home() {
                 <Link href="/#soluciones" className="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-gray-900/20 hover:transform hover:-translate-y-1 transition duration-300">
                   Ver Catálogo B2B
                 </Link>
-                <a href="https://wa.me/573000000000" className="bg-white text-gray-700 border border-gray-300 px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition duration-300 flex items-center justify-center gap-2">
+                <a href={WHATSAPP_URL} className="bg-white text-gray-700 border border-gray-300 px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition duration-300 flex items-center justify-center gap-2" target="_blank" rel="noopener noreferrer">
                   <span>Hablar con un Asesor</span>
                 </a>
               </div>

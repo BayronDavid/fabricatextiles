@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import ProductSlider from '@/components/ui/ProductSlider';
 import ContactForm from '@/components/ui/ContactForm';
 import Link from 'next/link';
+import { whatsappLinkWithText } from '@/data/contact';
 import { notFound } from 'next/navigation';
 import { cities } from '@/data/cities';
 
@@ -114,7 +115,7 @@ export default async function ProductPage({ params }) {
 
               <div className="flex flex-col gap-4">
                 <a 
-                  href={`https://wa.me/573000000000?text=Hola, me interesa cotizar: ${product.title}`}
+                  href={whatsappLinkWithText(`Hola, me interesa cotizar: ${product.title}`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-green-600 text-white font-bold text-lg py-4 rounded-xl hover:bg-green-700 transition flex items-center justify-center gap-2 shadow-lg shadow-green-600/20"

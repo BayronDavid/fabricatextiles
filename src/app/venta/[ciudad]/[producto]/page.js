@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { products } from '@/data/products';
 import { cities } from '@/data/cities';
+import { whatsappLinkWithText } from '@/data/contact';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://confeccioneselarte.com';
 
@@ -182,13 +183,13 @@ export default async function VentaCiudadProductoPage({ params }) {
 
                 <div className="flex gap-3 flex-wrap">
                   <a
-                    href={`https://wa.me/573000000000?text=Hola, quiero cotizar ${product.shortTitle} con despacho a ${city.name}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-green-600 text-white font-bold text-sm hover:bg-green-700 transition shadow-lg shadow-green-600/20"
-                  >
-                    Cotizar por WhatsApp
-                  </a>
+                      href={whatsappLinkWithText(`Hola, quiero cotizar ${product.shortTitle} con despacho a ${city.name}`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-green-600 text-white font-bold text-sm hover:bg-green-700 transition shadow-lg shadow-green-600/20"
+                    >
+                      Cotizar por WhatsApp
+                    </a>
                   <Link
                     href={`/productos/${product.slug}`}
                     className="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-gray-300 text-sm font-semibold text-gray-800 hover:bg-gray-50"

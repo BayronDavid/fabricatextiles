@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { whatsappLinkWithText } from '@/data/contact';
 
 export default function ProductCard({ product, showCategoryLink = true }) {
   const images = product.images || [];
@@ -95,7 +96,7 @@ export default function ProductCard({ product, showCategoryLink = true }) {
           Ver ficha
         </Link>
         <a
-          href={`https://wa.me/573000000000?text=Hola, quiero cotizar: ${encodeURIComponent(product.title)}`}
+          href={whatsappLinkWithText(`Hola, quiero cotizar: ${product.title}`)}
           className="text-sm font-bold text-green-700 hover:text-green-800 flex items-center gap-1"
           target="_blank"
           rel="noopener noreferrer"
