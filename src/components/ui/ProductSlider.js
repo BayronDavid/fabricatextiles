@@ -4,9 +4,8 @@ import Image from 'next/image';
 
 export default function ProductSlider({ images, title }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const containerRef = useRef(null);
-  const startXRef = useRef(0);
-  const isPointerDownRef = useRef(false);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -16,36 +15,33 @@ export default function ProductSlider({ images, title }) {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const delta = touchEndX.current - touchStartX.current;
+    const threshold = 50; // px mínimos para detectar swipe
+    if (delta > threshold) {
+      prevSlide();
+    } else if (delta < -threshold) {
+      nextSlide();
+    }
+  };
+
   if (!images || images.length === 0) return null;
 
   return (
     <div
-      ref={containerRef}
-      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200"
-      // Prefer vertical scrolling; allow pointer handling for horizontal swipes
-      style={{ touchAction: 'pan-y' }}
-      onPointerDown={(e) => {
-        isPointerDownRef.current = true;
-        startXRef.current = e.clientX;
-        try { e.currentTarget.setPointerCapture && e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {}
-      }}
-      onPointerMove={(e) => {
-        if (!isPointerDownRef.current) return;
-        // prevent accidental text selection; we don't translate visually
-      }}
-      onPointerUp={(e) => {
-        if (!isPointerDownRef.current) return;
-        isPointerDownRef.current = false;
-        const delta = e.clientX - startXRef.current;
-        const threshold = 50; // px
-        if (delta > threshold) {
-          prevSlide();
-        } else if (delta < -threshold) {
-          nextSlide();
-        }
-        try { e.currentTarget.releasePointerCapture && e.currentTarget.releasePointerCapture(e.pointerId); } catch (err) {}
-      }}
-      onPointerCancel={() => { isPointerDownRef.current = false; }}
+      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200 select-none"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       <div className="relative w-full h-full">
         <Image 
