@@ -87,8 +87,8 @@ export default function ProductSlider({ images, title }) {
   return (
     <div
       ref={containerRef}
-      style={{ touchAction: 'pan-y' }}
-      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200 select-none touch-pan-y"
+      style={{ touchAction: 'pan-x' }}
+      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200 select-none touch-pan-x"
     >
       <div className="relative w-full h-full pointer-events-none">
         <Image
