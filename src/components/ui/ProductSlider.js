@@ -9,13 +9,17 @@ export default function ProductSlider({ images, title }) {
   const startY = useRef(0);
   const isSwiping = useRef(false);
 
+  // CORRECCIÓN: Dependencia cambiada a 'images' para satisfacer al React Compiler
   const nextSlide = useCallback(() => {
+    if (!images) return;
     setCurrentIndex((prev) => (prev + 1) % images.length);
-  }, [images?.length]);
+  }, [images]);
 
+  // CORRECCIÓN: Dependencia cambiada a 'images'
   const prevSlide = useCallback(() => {
+    if (!images) return;
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  }, [images?.length]);
+  }, [images]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -29,41 +33,45 @@ export default function ProductSlider({ images, title }) {
 
     const handleTouchMove = (e) => {
       if (!startX.current) return;
-      
-      const diffX = Math.abs(e.touches[0].clientX - startX.current);
-      const diffY = Math.abs(e.touches[0].clientY - startY.current);
-      
-      // If horizontal movement is greater than vertical, it's a swipe
-      if (diffX > diffY && diffX > 10) {
+
+      const currentX = e.touches[0].clientX;
+      const currentY = e.touches[0].clientY;
+
+      const diffX = startX.current - currentX;
+      const diffY = startY.current - currentY;
+
+      if (Math.abs(diffX) > Math.abs(diffY)) {
         isSwiping.current = true;
-        e.preventDefault(); // Prevent vertical scroll only when swiping horizontally
+        if (e.cancelable) {
+          e.preventDefault();
+        }
       }
     };
 
     const handleTouchEnd = (e) => {
-      if (!startX.current) return;
-      
+      if (!isSwiping.current || startX.current === 0) return;
+
       const endX = e.changedTouches[0].clientX;
-      const diff = endX - startX.current;
+      const diff = startX.current - endX;
       const threshold = 50;
 
       if (Math.abs(diff) > threshold) {
         if (diff > 0) {
-          prevSlide();
-        } else {
           nextSlide();
+        } else {
+          prevSlide();
         }
       }
 
-      // Reset
       startX.current = 0;
       startY.current = 0;
       isSwiping.current = false;
     };
 
-    // Use passive: false to allow preventDefault on touchmove
+    const options = { passive: false };
+
     container.addEventListener('touchstart', handleTouchStart, { passive: true });
-    container.addEventListener('touchmove', handleTouchMove, { passive: false });
+    container.addEventListener('touchmove', handleTouchMove, options);
     container.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     return () => {
@@ -71,63 +79,54 @@ export default function ProductSlider({ images, title }) {
       container.removeEventListener('touchmove', handleTouchMove);
       container.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [images?.length, nextSlide, prevSlide]);
+    // CORRECCIÓN: Dependencia 'images' en lugar de 'images.length'
+  }, [images, nextSlide, prevSlide]);
 
   if (!images || images.length === 0) return null;
 
   return (
     <div
       ref={containerRef}
-      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200 select-none cursor-grab active:cursor-grabbing"
+      style={{ touchAction: 'pan-y' }}
+      className="relative group rounded-xl overflow-hidden bg-gray-100 aspect-[9/16] border border-gray-200 select-none touch-pan-y"
     >
-      <div className="relative w-full h-full">
-        <Image 
-          src={images[currentIndex]} 
+      <div className="relative w-full h-full pointer-events-none">
+        <Image
+          src={images[currentIndex]}
           alt={`${title} - Vista ${currentIndex + 1}`}
           fill
-          className="object-contain transition-transform duration-500 pointer-events-none"
+          className="object-contain transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority={currentIndex === 0}
           unoptimized
           draggable={false}
         />
       </div>
-      
-      {/* Controls (only if > 1 image) */}
+
       {images.length > 1 && (
         <>
-          <button 
+          <button
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); prevSlide(); }}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity z-10"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity z-20 active:scale-95 touch-manipulation"
             aria-label="Anterior imagen"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
           </button>
-          <button 
+          <button
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); nextSlide(); }}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity z-10"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity z-20 active:scale-95 touch-manipulation"
             aria-label="Siguiente imagen"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
           </button>
-          
-          {/* Dots */}
-          <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10">
+
+          <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-20 pointer-events-none">
             {images.map((_, idx) => (
-              <button
+              <div
                 key={idx}
-                onClick={(e) => { e.preventDefault(); e.stopPropagation(); setCurrentIndex(idx); }}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${idx === currentIndex ? 'bg-gray-900' : 'bg-gray-400/80 hover:bg-gray-500'}`}
-                aria-label={`Ir a imagen ${idx + 1}`}
+                className={`w-2 h-2 rounded-full transition-colors shadow-sm ${idx === currentIndex ? 'bg-gray-900 ring-1 ring-white' : 'bg-gray-400/60'}`}
               />
             ))}
-          </div>
-
-          {/* Swipe hint for mobile */}
-          <div className="absolute bottom-10 left-0 right-0 flex justify-center md:hidden pointer-events-none">
-            <span className="text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">
-              ← Desliza →
-            </span>
           </div>
         </>
       )}
