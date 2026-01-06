@@ -253,7 +253,9 @@
       "Impermeable vulcanizado",
       "Rompevientos reflectivo"
     ],
-    "images": [],
+    "images": [
+      "https://placehold.co/600x400?text=Imagen+No+Disponible"
+    ],
     "featured": true
   },
   {
@@ -281,7 +283,9 @@
       "Traje lluvia vigilantes",
       "Impermeable motorizados"
     ],
-    "images": [],
+    "images": [
+      "https://placehold.co/600x400?text=Imagen+No+Disponible"
+    ],
     "featured": false
   },
   {
@@ -309,7 +313,9 @@
       "Ropa trabajo resistente",
       "Dotación industrial"
     ],
-    "images": [],
+    "images": [
+      "https://placehold.co/600x400?text=Imagen+No+Disponible"
+    ],
     "featured": false
   },
   {
@@ -337,7 +343,9 @@
       "Overol retardante de llama",
       "Overol refinería"
     ],
-    "images": [],
+    "images": [
+      "https://placehold.co/600x400?text=Imagen+No+Disponible"
+    ],
     "featured": true
   },
   {
@@ -365,7 +373,9 @@
       "Overol logística",
       "Overol montacargas"
     ],
-    "images": [],
+    "images": [
+      "https://placehold.co/600x400?text=Imagen+No+Disponible"
+    ],
     "featured": false
   },
   {
@@ -394,7 +404,9 @@
       "Chaleco logística",
       "Chalecos acolchados empresas"
     ],
-    "images": [],
+    "images": [
+      "https://placehold.co/600x400?text=Imagen+No+Disponible"
+    ],
     "featured": false
   },
   {
